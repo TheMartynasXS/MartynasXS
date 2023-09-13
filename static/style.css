@@ -1,0 +1,24 @@
+:root {
+    --accent: #ffc24f;
+    --accent-success: #7BBA9C;
+    --accent-failure: #ff4f7b;
+
+    --text-primary: #ececec;
+    --text-secondary: #cacaca;
+
+    --bg-100: #484950;
+    --bg-200: #3a3b41;
+    --bg-300: #303136;
+    --shadow: #00000080;
+}
+
+
+body {
+    display: grid;
+    margin: 0px;
+    height: 100dvh;
+    width: 100dvw;
+    color: var(--text-secondary);
+    background-color: var(--bg-100);
+    overflow: hidden
+}
