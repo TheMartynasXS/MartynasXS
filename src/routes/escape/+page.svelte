@@ -3,6 +3,9 @@
 	import Item from 'comps/Item.svelte';
 
 	let yourItems = [];
+
+	let Claimed = [0, 0, 0, 0];
+
 	let roomItems = [
 		{
 			Name: 'CPU',
@@ -59,6 +62,30 @@
 	</div>
 	<div class="right">
 		<div class="room" />
+		<button
+			class="couch hover"
+			on:click={() => {
+				if (Claimed[4] == 1) {
+					return 0;
+				}
+				let answer = prompt(
+					'Hidden cd\n\nWhat is an alternative name for artificial intelligence?'
+				).toLowerCase();
+				switch (answer) {
+					case 'machine learning':
+					case 'deep learning':
+						let reward = roomItems.pop();
+						alert(`Correct! You receive a ${reward.Name}!`);
+						yourItems.push(reward);
+						yourItems = yourItems;
+						roomItems = roomItems;
+						Claimed[4] = 1;
+						break;
+					default:
+						alert('Wrong answer!');
+				}
+			}}
+		/>
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div
@@ -81,28 +108,232 @@
 			<div class="doorhandle" />
 		</div>
 		<button
+			class="server hover"
 			on:click={() => {
-				let answer = prompt('Cheat code: ');
+				if (Claimed[0] == 1) {
+					return 0;
+				}
+				let answer = prompt(
+					'Super Computer Rack\n\nWhich British mathematician is often credited as being the key founder of AI? (surname only)'
+				).toLowerCase();
 				switch (answer) {
-					case 'reset':
-						localStorage.removeItem('firstVisit');
-						localStorage.removeItem('firstTime');
-						document.location.reload();
-						break;
-					case 'bypass':
-						yourItems = yourItems.concat(roomItems);
-						roomItems = [];
+					case 'turing':
+						let reward = roomItems.pop();
+						alert(`Correct! You receive a ${reward.Name}!`);
+						yourItems.push(reward);
 						yourItems = yourItems;
 						roomItems = roomItems;
+						Claimed[0] = 1;
+						break;
+					default:
+						alert('Wrong answer!');
 				}
 			}}
-		>
-			paper
-		</button>
+		/>
+		<div class="table">
+			<div class="chair" />
+			<button
+				class="computer hover"
+				on:click={() => {
+					if (Claimed[1] == 1) {
+						return 0;
+					}
+					let answer = prompt(
+						'Desktop Computer\n\nWhich company developed the widely used deep learning framework called TensorFlow?'
+					).toLowerCase();
+					switch (answer) {
+						case 'google':
+							let reward = roomItems.pop();
+							alert(`Correct! You receive a ${reward.Name}!`);
+							yourItems.push(reward);
+							yourItems = yourItems;
+							roomItems = roomItems;
+							Claimed[1] = 1;
+							break;
+						default:
+							alert('Wrong answer!');
+					}
+				}}
+			/>
+			<div class="keyboard" />
+		</div>
+
+		<button
+			class="tablet"
+			on:click={() => {
+				if (Claimed[2] == 1) {
+					return 0;
+				}
+				let answer = prompt(
+					'Tablet Computer\n\n Which movie explores the concept of a future where humans live alongside highly advanced humanoid robots called "replicants"?'
+				).toLowerCase();
+				switch (answer) {
+					case 'blade runner':
+						let reward = roomItems.pop();
+						alert(`Correct! You receive a ${reward.Name}!`);
+						yourItems.push(reward);
+						yourItems = yourItems;
+						roomItems = roomItems;
+						Claimed[2] = 1;
+						break;
+					default:
+						alert('Wrong answer!');
+				}
+			}}
+		/>
+		<button
+			class="television hover"
+			on:click={() => {
+				if (Claimed[3] == 1) {
+					return 0;
+				}
+				let answer = prompt(
+					'Talevision\n\n Which project by OpenAI demonstrated remarkable language generation capabilities?'
+				).toLowerCase();
+				switch (answer) {
+					case 'gpt':
+					case 'gpt-3':
+					case 'gpt3':
+					case 'chatgpt':
+						let reward = roomItems.pop();
+						alert(`Correct! You receive a ${reward.Name}!`);
+						yourItems.push(reward);
+						yourItems = yourItems;
+						roomItems = roomItems;
+						Claimed[3] = 1;
+						break;
+					default:
+						alert('Wrong answer!');
+				}
+			}}
+		/>
 	</div>
 </div>
 
 <style>
+	.couch {
+		position: absolute;
+		top: 40dvh;
+		z-index: 2;
+		left: 35dvh;
+		height: 20dvh;
+		width: 40dvh;
+		border-top: 5dvh solid #31241d;
+		border-left: 5dvh solid #31241d;
+		border-right: 5dvh solid #31241d;
+		border-radius: 5dvh 5dvh 0 0;
+		background-color: #513b2f;
+		box-sizing: border-box;
+	}
+	.television {
+		position: absolute;
+		bottom: 0dvh;
+		left: 30dvh;
+		height: 8dvh;
+		width: 60dvh;
+		background-color: gray;
+		border-top: 1dvh solid black;
+		border-radius: 1dvh;
+	}
+	.tablet:hover,
+	.tablet:focus-within,
+	.tablet:active {
+		background-image: url('./ipad.png');
+	}
+	.tablet {
+		position: absolute;
+		bottom: 10dvh;
+		right: 10dvh;
+		height: 12dvh;
+		width: 10dvh;
+		transform: rotate(80deg);
+		border-radius: 2dvh;
+		background: black;
+		transition: all 0.1s ease-in-out;
+		background-size: cover;
+		border: gray 1dvh inset;
+		box-sizing: border-box;
+	}
+	.keyboard {
+		position: absolute;
+		bottom: 1dvh;
+		left: 10dvh;
+		height: 4dvh;
+		width: 12dvh;
+		background-color: gray;
+		border-top: darkgray 1dvh solid;
+		box-sizing: border-box;
+		border-radius: 1dvh;
+	}
+	.computer {
+		position: absolute;
+		top: 2vh;
+		right: 10dvh;
+		height: 6dvh;
+		width: 10dvh;
+		border-bottom: #1f2137 1.5dvh solid;
+		border-left: rgb(80, 42, 42) 1dvh solid;
+		border-right: rgb(80, 42, 42) 1dvh solid;
+		background-color: gray;
+		box-sizing: border-box;
+		transform: rotate(16deg);
+		transition: all 0.1s ease-in-out;
+		z-index: 1;
+	}
+	.chair {
+		position: absolute;
+		bottom: -16dvh;
+		transform: rotate(4deg);
+		left: 12dvh;
+		height: 2dvh;
+		width: 10dvh;
+		background-color: rgb(80, 42, 42);
+		box-sizing: border-box;
+		transition: all 0.1s ease-in-out;
+		z-index: 1;
+	}
+	.chair::before {
+		content: '';
+		position: absolute;
+		bottom: 0dvh;
+		transform: rotateY(180deg);
+		left: 0;
+		z-index: -2;
+		height: 10dvh;
+		width: 10dvh;
+		border-left: rgb(80, 42, 42) 2dvh solid;
+		border-right: rgb(80, 42, 42) 2dvh solid;
+		box-sizing: border-box;
+		transition: all 0.1s ease-in-out;
+	}
+	.chair:hover {
+		height: 10dvh;
+	}
+	.chair:hover::before {
+		height: 0;
+	}
+
+	.table {
+		position: absolute;
+		top: 6dvh;
+		height: 15dvh;
+		width: 40dvh;
+		left: 40dvh;
+		transform: rotate(4deg);
+		background-color: rgb(80, 42, 42);
+		box-sizing: border-box;
+	}
+	.server {
+		position: absolute;
+		top: 20dvh;
+		height: 40dvh;
+		width: 20dvh;
+		background-color: #2b2d42;
+		border-bottom: 5dvh inset #1f2137;
+		border-top: 5dvh solid #333652;
+		border-right: 5dvh inset #222441;
+		box-sizing: border-box;
+	}
 	.empty {
 		background-color: var(--bg-200);
 		width: 50%;
@@ -139,18 +370,29 @@
 		height: 100%;
 		width: 100%;
 		box-sizing: border-box;
-		border-right: 5vh inset #513b2f;
-		border-top: 5vh inset #5e4333;
-		border-left: 5vh inset #7c5744;
-		border-bottom: 5vh inset #5e4333;
+		border-right: 5dvh inset #513b2f;
+		border-top: 5dvh inset #5e4333;
+		border-left: 5dvh inset #7c5744;
+		border-bottom: 5dvh inset #5e4333;
 		background-color: rgb(118, 85, 61);
+	}
+	.room::after {
+		position: absolute;
+		content: '';
+		height: auto;
+		width: auto;
+		inset: 20dvh;
+		background-color: olivedrab;
+		border: solid 5dvh green;
+		transform: rotate(-4deg);
+		filter: saturate(0.5);
 	}
 	.door {
 		position: absolute;
 		right: 0px;
-		top: 10vh;
-		height: 25vh;
-		width: 5vh;
+		top: 10dvh;
+		height: 25dvh;
+		width: 5dvh;
 		background-color: rgb(175, 155, 131);
 	}
 	.doorhandle {

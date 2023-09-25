@@ -43,10 +43,10 @@
 		transition: all 0.1s ease-in-out;
 	}
 
-	button:hover,
-	button:focus-within,
-	button:active,
-	button:focus {
+	.item:hover,
+	.item:focus-within,
+	.item:active,
+	.item:focus {
 		filter: drop-shadow(0 0 0.75rem var(--shadow));
 		transform: scale(1.1);
 	}

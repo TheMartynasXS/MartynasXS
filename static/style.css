@@ -17,9 +17,12 @@
     overflow: hidden;
     width: 100%;
 }
+path{
+    border:none;
+}
 
 button {
-    border: 0px solid transparent;
+    border: none;
 }
 
 html {
