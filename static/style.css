@@ -12,13 +12,18 @@
     --shadow: #00000080;
 }
 
+* {
+    border: none;
+}
+
 .main {
     height: 100%;
     overflow: hidden;
     width: 100%;
 }
-path{
-    border:none;
+
+path {
+    border: none;
 }
 
 button {
