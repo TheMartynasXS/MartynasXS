@@ -99,7 +99,6 @@
 		>
 			paper
 		</button>
-		
 	</div>
 </div>
 
@@ -147,6 +146,7 @@
 		background-color: rgb(118, 85, 61);
 	}
 	.door {
+		position: absolute;
 		right: 0px;
 		top: 10vh;
 		height: 25vh;

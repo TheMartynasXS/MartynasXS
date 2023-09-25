@@ -14,11 +14,12 @@
 
 .main {
     height: 100%;
+    overflow: hidden;
     width: 100%;
 }
 
 button {
-    border: none;
+    border: 0px solid transparent;
 }
 
 html {
