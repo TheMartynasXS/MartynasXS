@@ -9,6 +9,7 @@ const config = {
 		adapter: adapter(),
 		alias:{
 			"comps": "./src/components",
+			"stores": "./src/stores",
 		}
 	}
 };

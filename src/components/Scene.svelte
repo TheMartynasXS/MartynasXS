@@ -1,69 +1,42 @@
 <script>
-  import { T, useTask } from '@threlte/core'
+  import { T, useTask,useThrelte } from '@threlte/core'
   import { OrbitControls } from '@threlte/extras'
-
+  import { GLTFExporter, } from 'three/addons/exporters/GLTFExporter.js';
   import { createNoise2D } from 'simplex-noise'
 
-  import Box from 'comps/Box.svelte'
-  import Sphere from 'comps/Sphere.svelte'
-  import Plane from 'comps/Plane.svelte'
+  import Box from 'comps/base_models/Box.svelte'
+  import Sphere from 'comps/base_models/Sphere.svelte'
+  import Plane from 'comps/base_models/Plane.svelte'
 
-  export let model = 'plane'
-  export let subtype = 'ripple'
-
-
-  // const noise = createNoise2D()
-  // const vertices = geometry.getAttribute('position').array
-
-  // console.log(vertices.length/3)
-
-  // if( model == "plane"){
-  //  if(subtype == "ripple"){
-  //     for (let i = 0; i < vertices.length; i += 3) {
-  //     // Calculate distance from center
-  //     const centerX = (vertices[0] + vertices[vertices.length - 3]) / 2;
-  //     const centerY = (vertices[1] + vertices[vertices.length - 2]) / 2;
-  //     const distance = Math.sqrt(Math.pow(vertices[i] - centerX, 2) + Math.pow(vertices[i + 1] - centerY, 2));
-
-  //     // Adjust displacement based on distance
-  //     vertices[i + 2] += Math.sin(distance-Math.PI/2); // Adjust factor for stronger/weaker ripples
-  //     }
-  //   }
-  //   else if(subtype == "wave"){
-  //     for (let i = 0; i < vertices.length; i += 3) {
-  //       vertices[i + 2] += Math.sin(vertices[i]*2)/2
-  //     }
-  //   }
-  // }
-
-
-  // for (let i = 0; i < vertices.length; i += 3) {
-  //   // Calculate distance from center
-  //   const centerX = (vertices[0] + vertices[vertices.length - 3]) / 2;
-  //   const centerY = (vertices[1] + vertices[vertices.length - 2]) / 2;
-  //   const distance = Math.sqrt(Math.pow(vertices[i] - centerX, 2) + Math.pow(vertices[i + 1] - centerY, 2));
-
-  //   // Adjust displacement based on distance
-  //   vertices[i + 2] += Math.sin(distance * 2) / (distance * 2); // Adjust factor for stronger/weaker ripples
-  // }
+  export let data;
+  export let display
   
   let cameraposition = {x: 20, y: 20, z: 20}
 
-
-  // look at the center of the scene
-	//   let target = {x: 0, y: 0, z: 0}
-	//   let camera_offset = {x: 100, y: 10, z: 100}
-  
-  
-  
-  // geometry.computeVertexNormals()
-  // let rotation = 0
-  // useTask((delta) => {
-  //   rotation += delta
-  // })
-
-  
-
+  const {scene} = useThrelte()
+  export const ExportFunction= ()=>{
+    const exporter = new GLTFExporter();
+    exporter.parse(
+      scene,
+      // called when the gltf has been generated
+      function ( result ) {
+        //save the glb from result to a file
+        const blob = new Blob( [ result ], { type: 'model/gltf-binary' } );
+        const url = URL.createObjectURL( blob );
+        const a = document.createElement( 'a' );
+        a.href = url;
+        a.download = 'Model.glb';
+        a.click();
+        URL.revokeObjectURL( url );
+      },
+      // called when there is an error in the generation
+      function ( error ) {
+        console.log( 'An error happened' );
+      },
+      {
+        binary: true,
+      });
+  }
 </script>
 
 
@@ -82,60 +55,30 @@
 	<OrbitControls enableDamping />
 </T.PerspectiveCamera>
 
+<T.AmbientLight intensity={0.5} />
 <T.DirectionalLight
-  position={[0, 10, 10]}
+  position={[10, 0, 0]}
+  intensity={0.5}
+  color="red"
+  castShadow
+/>
+<T.DirectionalLight
+  position={[0, 10, 0]}
+  intensity={0.5}
+  color="green"
+  castShadow
+/>
+<T.DirectionalLight
+  position={[0, 0, 10]}
+  intensity={0.5}
+  color="blue"
   castShadow
 />
 
-{#if model == "plane"}
-  <Plane {subtype}/>
-{:else if  model == "box"}
-  <Box/>
-{:else if model == "sphere"}
-  <Sphere/>
+{#if data.type == "plane"}
+  <Plane {data} {display}/>
+{:else if data.type == "box"}
+  <Box {data} {display}/>
+{:else if data.type == "sphere"}
+  <Sphere {data} {display}/>
 {/if}
-
-<!-- {#if model == "plane"}
- 
-  <T.Mesh
-    {geometry}
-    rotation={[-Math.PI/2,0,spin]}
-    position.y={1}
-    scale={$scale}
-    on:pointerenter={() => scale.set(1.25)}
-    on:pointerleave={() => scale.set(1)}
-    castShadow
-    >
-    <T.MeshStandardMaterial color="hotpink" wireframe /> 
-  </T.Mesh>
-{:else if  model == "box"}
-
-  <T.Mesh
-  rotation={[-Math.PI/2,0,spin]}
-  position.y={1}
-  scale={$scale}
-  on:pointerenter={() => scale.set(1.25)}
-  on:pointerleave={() => scale.set(1)}>
-    <T.BoxGeometry args={[8, 8, 8, 10,10,10]} />
-    <T.MeshStandardMaterial color="hotpink" wireframe/> 
-  </T.Mesh>
-{:else if model == "sphere"}
-  <T.Mesh
-  rotation={[-Math.PI/2,0,spin]}
-  position.y={1}
-  scale={$scale}
-  on:pointerenter={() => scale.set(1.25)}
-  on:pointerleave={() => scale.set(1)}>
-    <T.SphereGeometry args={[4,8,8]}/>
-    <T.MeshStandardMaterial color="white"/> 
-  </T.Mesh>
-  <T.Mesh
-  rotation={[-Math.PI/2,0,spin]}
-  position.y={1}
-  scale={$scale}
-  on:pointerenter={() => scale.set(1.25)}
-  on:pointerleave={() => scale.set(1)}>
-    <T.SphereGeometry args={[4,8,8]}/>
-    <T.MeshStandardMaterial color="hotpink" wireframe/> 
-  </T.Mesh>
-{/if} -->

@@ -24,6 +24,7 @@
 	"dependencies": {
 		"@threlte/core": "^7.2.1",
 		"@threlte/extras": "^8.11.1",
+		"dexie": "^4.0.4",
 		"simplex-noise": "^4.0.1",
 		"three": "^0.163.0"
 	}
