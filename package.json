@@ -20,5 +20,11 @@
 		"svelte": "^4.0.5",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@threlte/core": "^7.2.1",
+		"@threlte/extras": "^8.11.1",
+		"simplex-noise": "^4.0.1",
+		"three": "^0.163.0"
+	}
 }
