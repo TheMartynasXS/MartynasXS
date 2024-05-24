@@ -5,7 +5,11 @@
     let rotation = 0
     let model = 'plane'
     let subtype = 'normal'
+    
     let is_mobile = matchMedia('(max-width: 600px)').matches
+    if (!is_mobile) {
+        console.log("Mobile")
+    }
 </script>
 
 <style>

@@ -1,17 +1,13 @@
 <script>
   import { T, useTask } from '@threlte/core'
   import { OrbitControls } from '@threlte/extras'
-  import { interactivity } from '@threlte/extras'
 
-  import { spring } from 'svelte/motion'
   import { createNoise2D } from 'simplex-noise'
 
   import Box from 'comps/Box.svelte'
   import Sphere from 'comps/Sphere.svelte'
   import Plane from 'comps/Plane.svelte'
 
-  interactivity()
-  const scale = spring(1)
   export let model = 'plane'
   export let subtype = 'ripple'
 
