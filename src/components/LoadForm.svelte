@@ -34,7 +34,6 @@
         background-color:#303136;
         color:aliceblue;
         border-radius: 16px;
-        flex:1;
     }
     button:hover{
         cursor:pointer;
@@ -85,10 +84,12 @@
         display:flex;
         align-items:center;
     }
-    .input-group > input,
-    .input-group > button{
+    .input-group > input{
         margin-left: auto;
+    }
+    .input-group > button{
         min-height: 2rem;
+        padding-inline: 1rem;
     }
     input[type="radio"]{
         transform: scale(2);
@@ -97,7 +98,9 @@
     input[type="radio"]:hover{
         cursor:pointer;
     }
-    
+    .flex{
+        flex:1;
+    }
     
 </style>
 
@@ -109,19 +112,20 @@
                     <label for="model">{model.name == "" ? model.id : model.name} , {model.params.type} {model.params.type == "plane" ? `(${model.params.subtype})`: ""}
                     </label>
                     <input type="radio" name="model" value={model.id} bind:group={selectedModel}>
+                    <button on:click={()=>{db.models.delete(model.id)}}>Delete</button>
                 </li>
             {:else}
                 <li class="input-group backdrop">
-                    <label for="Name">No models saved</label>
+                    <label class="flex" for="Name">No models saved</label>
                 </li>
             {/each}
         </ul>
     {/if}
     <div class="input-group">
-        <button on:click={handleClick}>
+        <button class="flex" on:click={handleClick}>
             Load selected model
         </button>
-        <button on:click={()=>{open=false}}>
+        <button class="flex" on:click={()=>{open=false}}>
             Close
         </button>
 </form>
