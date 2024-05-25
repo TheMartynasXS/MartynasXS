@@ -73,10 +73,10 @@
     }
     .input-group > button:hover{
         cursor:pointer;
-        background-color: rgb(98, 98, 235);
+        background-color: #6262eb;
     }
     input{
-        accent-color: rgb(98, 98, 235);;
+        accent-color: #6262eb;
     }
     .page > aside{
         width: 300px;
@@ -110,17 +110,38 @@
     label{
         word-break: keep-all;
     }
+    .mobile{
+        display:grid;
+        max-height:fit-content;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .mobile > h1 {
+        display:grid;
+        place-items: center;
+    }
 </style>
 
 <div class="page">
+    <main>
+        <Canvas>
+            <Scene bind:this={scene_ref} {data} {display}/>
+        </Canvas>
+    </main>
     {#if is_mobile}
-        <div>This device is too small to render the 3D scene</div>
+        <aside class="mobile">
+            <h1>
+                MeshFN
+            </h1>
+            <p>
+                This device is geared for use on bigger screens
+            </p>
+            <p>
+                For the best experience,<br> please visit on a larger device.
+            </p>
+        </aside>
     {:else}
-        <main>
-            <Canvas>
-                <Scene bind:this={scene_ref} {data} {display}/>
-            </Canvas>
-        </main>
         <aside>
             <div class="input-group">
                 <label for={"Display"}>Display:</label>
@@ -173,15 +194,13 @@
             <div class="input-group">
                 <button class="button" on:click={scene_ref.ExportFunction()}>Export / Download</button>
             </div>
-            <div class="input-group special">
-                <button class="button" on:click={()=>{open("https://github.com/TheMartynasXS/")}}>Dev. GitHub</button>
+            <div class="input-group">
+                <button class="button" on:click={()=>{open("https://github.com/TheMartynasXS/")}}>GitHub</button>
             </div>
         </aside>
     {/if}
     {#if showSave}
-
         <SaveForm bind:save {data} bind:open={showSave}/>
-
     {/if}
     {#if showLoad}
         <LoadForm bind:load bind:data={data} bind:open={showLoad}/>
