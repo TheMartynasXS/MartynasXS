@@ -85,8 +85,10 @@
         display:flex;
         align-items:center;
     }
-    .input-group > input{
+    .input-group > input,
+    .input-group > button{
         margin-left: auto;
+        min-height: 2rem;
     }
     input[type="radio"]{
         transform: scale(2);
