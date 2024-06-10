@@ -37,7 +37,7 @@
     }
     button:hover{
         cursor:pointer;
-        background-color: rgb#6262eb;
+        background-color: var(--accent);
     }
     form > * {
         height: 2rem;
@@ -93,7 +93,7 @@
     }
     input[type="radio"]{
         transform: scale(2);
-        accent-color: rgb#6262eb;
+        accent-color: var(--accent);
     }
     input[type="radio"]:hover{
         cursor:pointer;

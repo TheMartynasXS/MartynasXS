@@ -25,7 +25,7 @@
     }
     button:hover{
         cursor:pointer;
-        background-color: rgb(98, 98, 235);
+        background-color: var(--accent);
     }
     form > * {
         height: 2rem;
