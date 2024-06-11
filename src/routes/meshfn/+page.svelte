@@ -195,6 +195,7 @@
                     <option value={"plane"}> plane </option>
                     <option value={"box"}> box </option>
                     <option value={"sphere"}> sphere </option>
+                    <option value={"cylinder"}> cylinder </option>
                 </select>
             </div>
             {#if data.type == "plane"}
@@ -210,7 +211,7 @@
             {/if}
             {#if data.type != "plane" || data.type == "plane" && data.subtype != "normal"}
             <div class="input-group">
-                <label for={"Subdivision"}>{"Subdivisions: [1-100]"}</label>
+                <label for={"Subdivision"}>{`Subdivisions: [${1}-100]`}</label>
                 <input id={"Subdivision"} type="range" bind:value={data.subdivisions} min={1} max={100} step={1}>
             </div>
             {/if}
@@ -232,9 +233,6 @@
             <div class="input-group">
                 <button class="button" on:click={HandleExport}>Export / Download</button>
             </div>
-            <!-- <div class="input-group">
-                <button class="button" on:click={()=>{open("https://github.com/TheMartynasXS/")}}>GitHub</button>
-            </div> -->
         </aside>
     {/if}
     {#if showSave}

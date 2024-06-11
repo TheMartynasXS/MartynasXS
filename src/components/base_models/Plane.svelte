@@ -29,6 +29,8 @@
                 vertices[i + 2] += data.strength * Math.sin(data.multiplier * vertices[i]*2)/2
             }
         }
+        geometry.attributes.position.needsUpdate = true
+        geometry.computeVertexNormals()
         geometry.center()
     }
 </script>
@@ -40,7 +42,7 @@
     rotation={[-Math.PI/2,0,0]}
     scale={1}
     castShadow>
-    <T.MeshStandardMaterial color="rgb(98, 98, 235)" wireframe/> 
+    <T.MeshLambertMaterial color="rgb(98, 98, 235)" wireframe/> 
     </T.Mesh>
 {/if}
 <!-- If display is combined or solid -->
@@ -49,7 +51,7 @@
     {geometry}
     rotation={[-Math.PI/2,0,0]}
     castShadow>
-    <T.MeshStandardMaterial color="white"/> 
+    <T.MeshNormalMaterial color="white"/> 
     </T.Mesh>
 {/if}
 

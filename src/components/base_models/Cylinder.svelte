@@ -9,7 +9,7 @@
   <T.Mesh
   position.y={1}
   scale={1}>
-    <T.SphereGeometry args={[8,data.subdivisions,data.subdivisions]}/>
+  <T.CylinderGeometry args={[8,8,8,data.subdivisions]}/>
     <T.MeshLambertMaterial color="rgb(98, 98, 235)" wireframe/> 
   </T.Mesh>
 {/if}
@@ -18,7 +18,7 @@
   <T.Mesh
   position.y={1}
   scale={1}>
-    <T.SphereGeometry args={[8,data.subdivisions,data.subdivisions]}/>
+    <T.CylinderGeometry args={[8,8,8,data.subdivisions]}/>
     <T.MeshNormalMaterial color="white"/> 
   </T.Mesh>
 {/if}

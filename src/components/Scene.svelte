@@ -7,6 +7,7 @@
   import Box from 'comps/base_models/Box.svelte'
   import Sphere from 'comps/base_models/Sphere.svelte'
   import Plane from 'comps/base_models/Plane.svelte'
+  import Cylinder from 'comps/base_models/Cylinder.svelte'
 
   export let data;
   export let display
@@ -55,25 +56,8 @@
 	<OrbitControls enableDamping />
 </T.PerspectiveCamera>
 
-<T.AmbientLight intensity={0.5} />
-<T.DirectionalLight
-  position={[10, 0, 0]}
-  intensity={0.5}
-  color="red"
-  castShadow
-/>
-<T.DirectionalLight
-  position={[0, 10, 0]}
-  intensity={0.5}
-  color="green"
-  castShadow
-/>
-<T.DirectionalLight
-  position={[0, 0, 10]}
-  intensity={0.5}
-  color="blue"
-  castShadow
-/>
+<T.AmbientLight intensity={1} />
+
 
 {#if data.type == "plane"}
   <Plane {data} {display}/>
@@ -81,4 +65,6 @@
   <Box {data} {display}/>
 {:else if data.type == "sphere"}
   <Sphere {data} {display}/>
+{:else if data.type == "cylinder"}
+  <Cylinder {data} {display}/>
 {/if}

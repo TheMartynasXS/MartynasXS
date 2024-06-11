@@ -21,7 +21,7 @@
   position.y={1}
   scale={1}>
     <T.BoxGeometry args={[10, 10, 10, data.subdivisions,data.subdivisions,data.subdivisions]} />
-    <T.MeshStandardMaterial color="white"/> 
+    <T.MeshNormalMaterial color="white"/> 
   </T.Mesh>
 {/if}
 
