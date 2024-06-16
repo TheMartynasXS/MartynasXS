@@ -23,12 +23,12 @@
     let save
     let load
     
-    let display = "solid";
+    let display = "combined";
     let data = {
-        type:'box',
-        subtype:'normal',
-        subdivisions:1,
-        multiplier:0.25,
+        type:'plane',
+        subtype:'ripple',
+        subdivisions:10,
+        multiplier:1,
         strength:1
     }
 
