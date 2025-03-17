@@ -23,7 +23,7 @@
 		<button
 			class="card interactable-card"
 			on:click={() => {
-				goto('/meshfn');
+				goto('/skindb');
 			}}
 		>
 			<img
