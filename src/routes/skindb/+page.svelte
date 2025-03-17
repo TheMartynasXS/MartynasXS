@@ -1,6 +1,8 @@
 <script>
 	// import json data file
 	import data from './data.json';
+	console.log(data)
+	
 	let selected_champion = localStorage.getItem('selected_champion') ?? '1';
 	
 	$: localStorage.setItem('selected_champion', selected_champion);

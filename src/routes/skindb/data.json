@@ -1,5 +1,6 @@
 {
-    "266": {
+    "aatrox": {
+        "id": "266",
         "name": "Aatrox",
         "skins": {
             "0": {
@@ -258,7 +259,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/266.png"
     },
-    "103": {
+    "ahri": {
+        "id": "103",
         "name": "Ahri",
         "skins": {
             "0": {
@@ -839,7 +841,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/103.png"
     },
-    "84": {
+    "akali": {
+        "id": "84",
         "name": "Akali",
         "skins": {
             "0": {
@@ -1439,7 +1442,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/84.png"
     },
-    "166": {
+    "akshan": {
+        "id": "166",
         "name": "Akshan",
         "skins": {
             "0": {
@@ -1584,7 +1588,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/166.png"
     },
-    "12": {
+    "alistar": {
+        "id": "12",
         "name": "Alistar",
         "skins": {
             "0": {
@@ -1812,7 +1817,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/12.png"
     },
-    "799": {
+    "ambessa": {
+        "id": "799",
         "name": "Ambessa",
         "skins": {
             "0": {
@@ -1870,7 +1876,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/799.png"
     },
-    "32": {
+    "amumu": {
+        "id": "32",
         "name": "Amumu",
         "skins": {
             "0": {
@@ -2277,7 +2284,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/32.png"
     },
-    "34": {
+    "anivia": {
+        "id": "34",
         "name": "Anivia",
         "skins": {
             "0": {
@@ -2639,7 +2647,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/34.png"
     },
-    "1": {
+    "annie": {
+        "id": "1",
         "name": "Annie",
         "skins": {
             "0": {
@@ -3007,7 +3016,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png"
     },
-    "523": {
+    "aphelios": {
+        "id": "523",
         "name": "Aphelios",
         "skins": {
             "0": {
@@ -3278,7 +3288,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/523.png"
     },
-    "22": {
+    "ashe": {
+        "id": "22",
         "name": "Ashe",
         "skins": {
             "0": {
@@ -3781,7 +3792,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/22.png"
     },
-    "136": {
+    "aurelionsol": {
+        "id": "136",
         "name": "Aurelion Sol",
         "skins": {
             "0": {
@@ -4036,7 +4048,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/136.png"
     },
-    "893": {
+    "aurora": {
+        "id": "893",
         "name": "Aurora",
         "skins": {
             "0": {
@@ -4115,7 +4128,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/893.png"
     },
-    "268": {
+    "azir": {
+        "id": "268",
         "name": "Azir",
         "skins": {
             "0": {
@@ -4299,7 +4313,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/268.png"
     },
-    "432": {
+    "bard": {
+        "id": "432",
         "name": "Bard",
         "skins": {
             "0": {
@@ -4552,7 +4567,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/432.png"
     },
-    "200": {
+    "belveth": {
+        "id": "200",
         "name": "Bel'Veth",
         "skins": {
             "0": {
@@ -4755,7 +4771,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/200.png"
     },
-    "53": {
+    "blitzcrank": {
+        "id": "53",
         "name": "Blitzcrank",
         "skins": {
             "0": {
@@ -5182,7 +5199,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/53.png"
     },
-    "63": {
+    "brand": {
+        "id": "63",
         "name": "Brand",
         "skins": {
             "0": {
@@ -5523,7 +5541,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/63.png"
     },
-    "201": {
+    "braum": {
+        "id": "201",
         "name": "Braum",
         "skins": {
             "0": {
@@ -5807,7 +5826,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/201.png"
     },
-    "233": {
+    "briar": {
+        "id": "233",
         "name": "Briar",
         "skins": {
             "0": {
@@ -5948,7 +5968,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/233.png"
     },
-    "51": {
+    "caitlyn": {
+        "id": "51",
         "name": "Caitlyn",
         "skins": {
             "0": {
@@ -6292,7 +6313,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/51.png"
     },
-    "164": {
+    "camille": {
+        "id": "164",
         "name": "Camille",
         "skins": {
             "0": {
@@ -6583,7 +6605,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/164.png"
     },
-    "69": {
+    "cassiopeia": {
+        "id": "69",
         "name": "Cassiopeia",
         "skins": {
             "0": {
@@ -6833,7 +6856,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/69.png"
     },
-    "31": {
+    "chogath": {
+        "id": "31",
         "name": "Cho'Gath",
         "skins": {
             "0": {
@@ -7101,7 +7125,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/31.png"
     },
-    "42": {
+    "corki": {
+        "id": "42",
         "name": "Corki",
         "skins": {
             "0": {
@@ -7334,7 +7359,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/42.png"
     },
-    "122": {
+    "darius": {
+        "id": "122",
         "name": "Darius",
         "skins": {
             "0": {
@@ -7773,7 +7799,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/122.png"
     },
-    "131": {
+    "diana": {
+        "id": "131",
         "name": "Diana",
         "skins": {
             "0": {
@@ -8275,193 +8302,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/131.png"
     },
-    "36": {
-        "name": "Dr. Mundo",
-        "skins": {
-            "0": {
-                "name": "Dr. Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/base/drmundoloadscreen_0.jpg"
-            },
-            "1": {
-                "name": "Toxic Dr. Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin01/drmundoloadscreen_1.jpg"
-            },
-            "2": {
-                "name": "Mr. Mundoverse",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin02/drmundoloadscreen_2.jpg"
-            },
-            "3": {
-                "name": "Corporate Mundo",
-                "chromas": [
-                    {
-                        "id": 16,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 17,
-                        "colors": [
-                            "#E58BA5",
-                            "#E58BA5"
-                        ]
-                    },
-                    {
-                        "id": 18,
-                        "colors": [
-                            "#54209B",
-                            "#54209B"
-                        ]
-                    },
-                    {
-                        "id": 19,
-                        "colors": [
-                            "#ECF9F8",
-                            "#ECF9F8"
-                        ]
-                    },
-                    {
-                        "id": 20,
-                        "colors": [
-                            "#27211C",
-                            "#27211C"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin03/drmundoloadscreen_3.jpg"
-            },
-            "4": {
-                "name": "Mundo Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin04/drmundoloadscreen_4.jpg"
-            },
-            "5": {
-                "name": "Executioner Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin05/drmundoloadscreen_5.jpg"
-            },
-            "6": {
-                "name": "Rageborn Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin06/drmundoloadscreen_6.jpg"
-            },
-            "7": {
-                "name": "TPA Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin07/drmundoloadscreen_7.jpg"
-            },
-            "8": {
-                "name": "Pool Party Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin08/drmundoloadscreen_8.jpg"
-            },
-            "9": {
-                "name": "El Macho Mundo",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin09/drmundoloadscreen_9.jpg"
-            },
-            "10": {
-                "name": "Frozen Prince Mundo",
-                "chromas": [
-                    {
-                        "id": 11,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 12,
-                        "colors": [
-                            "#6ABBEE",
-                            "#6ABBEE"
-                        ]
-                    },
-                    {
-                        "id": 13,
-                        "colors": [
-                            "#27211C",
-                            "#27211C"
-                        ]
-                    },
-                    {
-                        "id": 14,
-                        "colors": [
-                            "#ECF9F8",
-                            "#ECF9F8"
-                        ]
-                    },
-                    {
-                        "id": 15,
-                        "colors": [
-                            "#E58BA5",
-                            "#E58BA5"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin10/drmundoloadscreen_10.jpg"
-            },
-            "21": {
-                "name": "Street Demons Dr. Mundo",
-                "chromas": [
-                    {
-                        "id": 22,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 23,
-                        "colors": [
-                            "#DED6B0",
-                            "#DED6B0"
-                        ]
-                    },
-                    {
-                        "id": 24,
-                        "colors": [
-                            "#2DA130",
-                            "#2DA130"
-                        ]
-                    },
-                    {
-                        "id": 25,
-                        "colors": [
-                            "#54209B",
-                            "#54209B"
-                        ]
-                    },
-                    {
-                        "id": 26,
-                        "colors": [
-                            "#27211C",
-                            "#27211C"
-                        ]
-                    },
-                    {
-                        "id": 27,
-                        "colors": [
-                            "#E58BA5",
-                            "#E58BA5"
-                        ]
-                    },
-                    {
-                        "id": 28,
-                        "colors": [
-                            "#73BFBE",
-                            "#73BFBE"
-                        ]
-                    },
-                    {
-                        "id": 29,
-                        "colors": [
-                            "#DF9117",
-                            "#DF9117"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin21/drmundoloadscreen_21.jpg"
-            }
-        },
-        "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/36.png"
-    },
-    "119": {
+    "draven": {
+        "id": "119",
         "name": "Draven",
         "skins": {
             "0": {
@@ -8908,7 +8750,195 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/119.png"
     },
-    "245": {
+    "drmundo": {
+        "id": "36",
+        "name": "Dr. Mundo",
+        "skins": {
+            "0": {
+                "name": "Dr. Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/base/drmundoloadscreen_0.jpg"
+            },
+            "1": {
+                "name": "Toxic Dr. Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin01/drmundoloadscreen_1.jpg"
+            },
+            "2": {
+                "name": "Mr. Mundoverse",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin02/drmundoloadscreen_2.jpg"
+            },
+            "3": {
+                "name": "Corporate Mundo",
+                "chromas": [
+                    {
+                        "id": 16,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 17,
+                        "colors": [
+                            "#E58BA5",
+                            "#E58BA5"
+                        ]
+                    },
+                    {
+                        "id": 18,
+                        "colors": [
+                            "#54209B",
+                            "#54209B"
+                        ]
+                    },
+                    {
+                        "id": 19,
+                        "colors": [
+                            "#ECF9F8",
+                            "#ECF9F8"
+                        ]
+                    },
+                    {
+                        "id": 20,
+                        "colors": [
+                            "#27211C",
+                            "#27211C"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin03/drmundoloadscreen_3.jpg"
+            },
+            "4": {
+                "name": "Mundo Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin04/drmundoloadscreen_4.jpg"
+            },
+            "5": {
+                "name": "Executioner Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin05/drmundoloadscreen_5.jpg"
+            },
+            "6": {
+                "name": "Rageborn Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin06/drmundoloadscreen_6.jpg"
+            },
+            "7": {
+                "name": "TPA Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin07/drmundoloadscreen_7.jpg"
+            },
+            "8": {
+                "name": "Pool Party Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin08/drmundoloadscreen_8.jpg"
+            },
+            "9": {
+                "name": "El Macho Mundo",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin09/drmundoloadscreen_9.jpg"
+            },
+            "10": {
+                "name": "Frozen Prince Mundo",
+                "chromas": [
+                    {
+                        "id": 11,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 12,
+                        "colors": [
+                            "#6ABBEE",
+                            "#6ABBEE"
+                        ]
+                    },
+                    {
+                        "id": 13,
+                        "colors": [
+                            "#27211C",
+                            "#27211C"
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "colors": [
+                            "#ECF9F8",
+                            "#ECF9F8"
+                        ]
+                    },
+                    {
+                        "id": 15,
+                        "colors": [
+                            "#E58BA5",
+                            "#E58BA5"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin10/drmundoloadscreen_10.jpg"
+            },
+            "21": {
+                "name": "Street Demons Dr. Mundo",
+                "chromas": [
+                    {
+                        "id": 22,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 23,
+                        "colors": [
+                            "#DED6B0",
+                            "#DED6B0"
+                        ]
+                    },
+                    {
+                        "id": 24,
+                        "colors": [
+                            "#2DA130",
+                            "#2DA130"
+                        ]
+                    },
+                    {
+                        "id": 25,
+                        "colors": [
+                            "#54209B",
+                            "#54209B"
+                        ]
+                    },
+                    {
+                        "id": 26,
+                        "colors": [
+                            "#27211C",
+                            "#27211C"
+                        ]
+                    },
+                    {
+                        "id": 27,
+                        "colors": [
+                            "#E58BA5",
+                            "#E58BA5"
+                        ]
+                    },
+                    {
+                        "id": 28,
+                        "colors": [
+                            "#73BFBE",
+                            "#73BFBE"
+                        ]
+                    },
+                    {
+                        "id": 29,
+                        "colors": [
+                            "#DF9117",
+                            "#DF9117"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/drmundo/skins/skin21/drmundoloadscreen_21.jpg"
+            }
+        },
+        "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/36.png"
+    },
+    "ekko": {
+        "id": "245",
         "name": "Ekko",
         "skins": {
             "0": {
@@ -9302,7 +9332,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/245.png"
     },
-    "60": {
+    "elise": {
+        "id": "60",
         "name": "Elise",
         "skins": {
             "0": {
@@ -9529,7 +9560,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/60.png"
     },
-    "28": {
+    "evelynn": {
+        "id": "28",
         "name": "Evelynn",
         "skins": {
             "0": {
@@ -9947,7 +9979,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/28.png"
     },
-    "81": {
+    "ezreal": {
+        "id": "81",
         "name": "Ezreal",
         "skins": {
             "0": {
@@ -10412,7 +10445,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/81.png"
     },
-    "9": {
+    "fiddlesticks": {
+        "id": "9",
         "name": "Fiddlesticks",
         "skins": {
             "0": {
@@ -10714,7 +10748,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/9.png"
     },
-    "114": {
+    "fiora": {
+        "id": "114",
         "name": "Fiora",
         "skins": {
             "0": {
@@ -11317,7 +11352,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/114.png"
     },
-    "105": {
+    "fizz": {
+        "id": "105",
         "name": "Fizz",
         "skins": {
             "0": {
@@ -11599,7 +11635,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/105.png"
     },
-    "3": {
+    "galio": {
+        "id": "3",
         "name": "Galio",
         "skins": {
             "0": {
@@ -11863,7 +11900,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/3.png"
     },
-    "41": {
+    "gangplank": {
+        "id": "41",
         "name": "Gangplank",
         "skins": {
             "0": {
@@ -12134,7 +12172,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/41.png"
     },
-    "86": {
+    "garen": {
+        "id": "86",
         "name": "Garen",
         "skins": {
             "0": {
@@ -12417,7 +12456,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/86.png"
     },
-    "150": {
+    "gnar": {
+        "id": "150",
         "name": "Gnar",
         "skins": {
             "0": {
@@ -12688,7 +12728,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/150.png"
     },
-    "79": {
+    "gragas": {
+        "id": "79",
         "name": "Gragas",
         "skins": {
             "0": {
@@ -12993,7 +13034,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/79.png"
     },
-    "104": {
+    "graves": {
+        "id": "104",
         "name": "Graves",
         "skins": {
             "0": {
@@ -13351,7 +13393,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/104.png"
     },
-    "887": {
+    "gwen": {
+        "id": "887",
         "name": "Gwen",
         "skins": {
             "0": {
@@ -13623,7 +13666,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/887.png"
     },
-    "120": {
+    "hecarim": {
+        "id": "120",
         "name": "Hecarim",
         "skins": {
             "0": {
@@ -13888,7 +13932,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/120.png"
     },
-    "74": {
+    "heimerdinger": {
+        "id": "74",
         "name": "Heimerdinger",
         "skins": {
             "0": {
@@ -14059,7 +14104,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/74.png"
     },
-    "910": {
+    "hwei": {
+        "id": "910",
         "name": "Hwei",
         "skins": {
             "0": {
@@ -14138,7 +14184,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/910.png"
     },
-    "420": {
+    "illaoi": {
+        "id": "420",
         "name": "Illaoi",
         "skins": {
             "0": {
@@ -14393,7 +14440,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/420.png"
     },
-    "39": {
+    "irelia": {
+        "id": "39",
         "name": "Irelia",
         "skins": {
             "0": {
@@ -14751,7 +14799,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/39.png"
     },
-    "427": {
+    "ivern": {
+        "id": "427",
         "name": "Ivern",
         "skins": {
             "0": {
@@ -14951,7 +15000,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/427.png"
     },
-    "40": {
+    "janna": {
+        "id": "40",
         "name": "Janna",
         "skins": {
             "0": {
@@ -15385,7 +15435,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/40.png"
     },
-    "59": {
+    "jarvaniv": {
+        "id": "59",
         "name": "Jarvan IV",
         "skins": {
             "0": {
@@ -15724,7 +15775,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/59.png"
     },
-    "24": {
+    "jax": {
+        "id": "24",
         "name": "Jax",
         "skins": {
             "0": {
@@ -15981,7 +16033,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/24.png"
     },
-    "126": {
+    "jayce": {
+        "id": "126",
         "name": "Jayce",
         "skins": {
             "0": {
@@ -16225,7 +16278,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/126.png"
     },
-    "202": {
+    "jhin": {
+        "id": "202",
         "name": "Jhin",
         "skins": {
             "0": {
@@ -16578,7 +16632,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/202.png"
     },
-    "222": {
+    "jinx": {
+        "id": "222",
         "name": "Jinx",
         "skins": {
             "0": {
@@ -16996,131 +17051,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/222.png"
     },
-    "897": {
-        "name": "K'Sante",
-        "skins": {
-            "0": {
-                "name": "K'Sante",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/base/ksanteloadscreen_0.jpg"
-            },
-            "1": {
-                "name": "Empyrean K'Sante",
-                "chromas": [
-                    {
-                        "id": 3,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 4,
-                        "colors": [
-                            "#2DA130",
-                            "#2DA130"
-                        ]
-                    },
-                    {
-                        "id": 5,
-                        "colors": [
-                            "#73BFBE",
-                            "#73BFBE"
-                        ]
-                    },
-                    {
-                        "id": 6,
-                        "colors": [
-                            "#ECF9F8",
-                            "#ECF9F8"
-                        ]
-                    },
-                    {
-                        "id": 7,
-                        "colors": [
-                            "#FF655B",
-                            "#95E237"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/skin01/ksanteloadscreen_1.jpg"
-            },
-            "2": {
-                "name": "Prestige Empyrean K'Sante",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/skin02/ksanteloadscreen_2.jpg"
-            },
-            "8": {
-                "name": "HEARTSTEEL K'Sante",
-                "chromas": [
-                    {
-                        "id": 9,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 10,
-                        "colors": [
-                            "#73BFBE",
-                            "#73BFBE"
-                        ]
-                    },
-                    {
-                        "id": 11,
-                        "colors": [
-                            "#E58BA5",
-                            "#E58BA5"
-                        ]
-                    },
-                    {
-                        "id": 12,
-                        "colors": [
-                            "#2756CE",
-                            "#2756CE"
-                        ]
-                    },
-                    {
-                        "id": 13,
-                        "colors": [
-                            "#2DA130",
-                            "#2DA130"
-                        ]
-                    },
-                    {
-                        "id": 14,
-                        "colors": [
-                            "#ECF9F8",
-                            "#ECF9F8"
-                        ]
-                    },
-                    {
-                        "id": 15,
-                        "colors": [
-                            "#54209B",
-                            "#54209B"
-                        ]
-                    },
-                    {
-                        "id": 16,
-                        "colors": [
-                            "#DF9117",
-                            "#DF9117"
-                        ]
-                    },
-                    {
-                        "id": 17,
-                        "colors": [
-                            "#CDE9EF",
-                            "#E9628F"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/skin08/ksanteloadscreen_8.jpg"
-            }
-        },
-        "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/897.png"
-    },
-    "145": {
+    "kaisa": {
+        "id": "145",
         "name": "Kai'Sa",
         "skins": {
             "0": {
@@ -17627,7 +17559,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/145.png"
     },
-    "429": {
+    "kalista": {
+        "id": "429",
         "name": "Kalista",
         "skins": {
             "0": {
@@ -17789,7 +17722,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/429.png"
     },
-    "43": {
+    "karma": {
+        "id": "43",
         "name": "Karma",
         "skins": {
             "0": {
@@ -18249,7 +18183,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/43.png"
     },
-    "30": {
+    "karthus": {
+        "id": "30",
         "name": "Karthus",
         "skins": {
             "0": {
@@ -18478,7 +18413,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/30.png"
     },
-    "38": {
+    "kassadin": {
+        "id": "38",
         "name": "Kassadin",
         "skins": {
             "0": {
@@ -18684,7 +18620,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/38.png"
     },
-    "55": {
+    "katarina": {
+        "id": "55",
         "name": "Katarina",
         "skins": {
             "0": {
@@ -19132,7 +19069,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/55.png"
     },
-    "10": {
+    "kayle": {
+        "id": "10",
         "name": "Kayle",
         "skins": {
             "0": {
@@ -19649,7 +19587,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/10.png"
     },
-    "141": {
+    "kayn": {
+        "id": "141",
         "name": "Kayn",
         "skins": {
             "0": {
@@ -19824,7 +19763,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/141.png"
     },
-    "85": {
+    "kennen": {
+        "id": "85",
         "name": "Kennen",
         "skins": {
             "0": {
@@ -20043,7 +19983,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/85.png"
     },
-    "121": {
+    "khazix": {
+        "id": "121",
         "name": "Kha'Zix",
         "skins": {
             "0": {
@@ -20438,7 +20379,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/121.png"
     },
-    "203": {
+    "kindred": {
+        "id": "203",
         "name": "Kindred",
         "skins": {
             "0": {
@@ -20728,7 +20670,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/203.png"
     },
-    "240": {
+    "kled": {
+        "id": "240",
         "name": "Kled",
         "skins": {
             "0": {
@@ -20914,7 +20857,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/240.png"
     },
-    "96": {
+    "kogmaw": {
+        "id": "96",
         "name": "Kog'Maw",
         "skins": {
             "0": {
@@ -21339,7 +21283,133 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/96.png"
     },
-    "7": {
+    "ksante": {
+        "id": "897",
+        "name": "K'Sante",
+        "skins": {
+            "0": {
+                "name": "K'Sante",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/base/ksanteloadscreen_0.jpg"
+            },
+            "1": {
+                "name": "Empyrean K'Sante",
+                "chromas": [
+                    {
+                        "id": 3,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "colors": [
+                            "#2DA130",
+                            "#2DA130"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "colors": [
+                            "#73BFBE",
+                            "#73BFBE"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "colors": [
+                            "#ECF9F8",
+                            "#ECF9F8"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "colors": [
+                            "#FF655B",
+                            "#95E237"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/skin01/ksanteloadscreen_1.jpg"
+            },
+            "2": {
+                "name": "Prestige Empyrean K'Sante",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/skin02/ksanteloadscreen_2.jpg"
+            },
+            "8": {
+                "name": "HEARTSTEEL K'Sante",
+                "chromas": [
+                    {
+                        "id": 9,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 10,
+                        "colors": [
+                            "#73BFBE",
+                            "#73BFBE"
+                        ]
+                    },
+                    {
+                        "id": 11,
+                        "colors": [
+                            "#E58BA5",
+                            "#E58BA5"
+                        ]
+                    },
+                    {
+                        "id": 12,
+                        "colors": [
+                            "#2756CE",
+                            "#2756CE"
+                        ]
+                    },
+                    {
+                        "id": 13,
+                        "colors": [
+                            "#2DA130",
+                            "#2DA130"
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "colors": [
+                            "#ECF9F8",
+                            "#ECF9F8"
+                        ]
+                    },
+                    {
+                        "id": 15,
+                        "colors": [
+                            "#54209B",
+                            "#54209B"
+                        ]
+                    },
+                    {
+                        "id": 16,
+                        "colors": [
+                            "#DF9117",
+                            "#DF9117"
+                        ]
+                    },
+                    {
+                        "id": 17,
+                        "colors": [
+                            "#CDE9EF",
+                            "#E9628F"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/ksante/skins/skin08/ksanteloadscreen_8.jpg"
+            }
+        },
+        "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/897.png"
+    },
+    "leblanc": {
+        "id": "7",
         "name": "LeBlanc",
         "skins": {
             "0": {
@@ -21725,7 +21795,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/7.png"
     },
-    "64": {
+    "leesin": {
+        "id": "64",
         "name": "Lee Sin",
         "skins": {
             "0": {
@@ -22180,7 +22251,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/64.png"
     },
-    "89": {
+    "leona": {
+        "id": "89",
         "name": "Leona",
         "skins": {
             "0": {
@@ -22596,7 +22668,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/89.png"
     },
-    "876": {
+    "lillia": {
+        "id": "876",
         "name": "Lillia",
         "skins": {
             "0": {
@@ -22854,7 +22927,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/876.png"
     },
-    "127": {
+    "lissandra": {
+        "id": "127",
         "name": "Lissandra",
         "skins": {
             "0": {
@@ -23142,7 +23216,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/127.png"
     },
-    "236": {
+    "lucian": {
+        "id": "236",
         "name": "Lucian",
         "skins": {
             "0": {
@@ -23621,7 +23696,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/236.png"
     },
-    "117": {
+    "lulu": {
+        "id": "117",
         "name": "Lulu",
         "skins": {
             "0": {
@@ -23985,7 +24061,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/117.png"
     },
-    "99": {
+    "lux": {
+        "id": "99",
         "name": "Lux",
         "skins": {
             "0": {
@@ -24430,7 +24507,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/99.png"
     },
-    "54": {
+    "malphite": {
+        "id": "54",
         "name": "Malphite",
         "skins": {
             "0": {
@@ -24740,7 +24818,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/54.png"
     },
-    "90": {
+    "malzahar": {
+        "id": "90",
         "name": "Malzahar",
         "skins": {
             "0": {
@@ -25060,7 +25139,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/90.png"
     },
-    "57": {
+    "maokai": {
+        "id": "57",
         "name": "Maokai",
         "skins": {
             "0": {
@@ -25286,7 +25366,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/57.png"
     },
-    "11": {
+    "masteryi": {
+        "id": "11",
         "name": "Master Yi",
         "skins": {
             "0": {
@@ -25881,7 +25962,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/11.png"
     },
-    "800": {
+    "mel": {
+        "id": "800",
         "name": "Mel",
         "skins": {
             "0": {
@@ -25953,7 +26035,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/800.png"
     },
-    "902": {
+    "milio": {
+        "id": "902",
         "name": "Milio",
         "skins": {
             "0": {
@@ -26094,7 +26177,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/902.png"
     },
-    "21": {
+    "missfortune": {
+        "id": "21",
         "name": "Miss Fortune",
         "skins": {
             "0": {
@@ -26526,7 +26610,176 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/21.png"
     },
-    "82": {
+    "monkeyking": {
+        "id": "62",
+        "name": "Wukong",
+        "skins": {
+            "0": {
+                "name": "Wukong",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/base/monkeykingloadscreen.jpg"
+            },
+            "1": {
+                "name": "Volcanic Wukong",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin01/monkeykingloadscreen_1.jpg"
+            },
+            "2": {
+                "name": "General Wukong",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin02/monkeykingloadscreen_2.jpg"
+            },
+            "3": {
+                "name": "Jade Dragon Wukong",
+                "chromas": [
+                    {
+                        "id": 25,
+                        "colors": [
+                            "#5F432B",
+                            "#5F432B"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin03/monkeykingloadscreen_3.jpg"
+            },
+            "4": {
+                "name": "Underworld Wukong",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin04/monkeykingloadscreen_4.jpg"
+            },
+            "5": {
+                "name": "Radiant Wukong",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin05/monkeykingloadscreen_5.jpg"
+            },
+            "6": {
+                "name": "Lancer Stratus Wukong",
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin06/monkeykingloadscreen_6.jpg"
+            },
+            "7": {
+                "name": "Battle Academia Wukong",
+                "chromas": [
+                    {
+                        "id": 8,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "colors": [
+                            "#E58BA5",
+                            "#E58BA5"
+                        ]
+                    },
+                    {
+                        "id": 10,
+                        "colors": [
+                            "#FFEE59",
+                            "#FFEE59"
+                        ]
+                    },
+                    {
+                        "id": 11,
+                        "colors": [
+                            "#2756CE",
+                            "#2756CE"
+                        ]
+                    },
+                    {
+                        "id": 12,
+                        "colors": [
+                            "#2DA130",
+                            "#2DA130"
+                        ]
+                    },
+                    {
+                        "id": 13,
+                        "colors": [
+                            "#ECF9F8",
+                            "#ECF9F8"
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "colors": [
+                            "#5F432B",
+                            "#5F432B"
+                        ]
+                    },
+                    {
+                        "id": 15,
+                        "colors": [
+                            "#27211C",
+                            "#27211C"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin07/monkeykingloadscreen_7.jpg"
+            },
+            "16": {
+                "name": "Elderwood Wukong",
+                "chromas": [
+                    {
+                        "id": 17,
+                        "colors": [
+                            "#D33528",
+                            "#D33528"
+                        ]
+                    },
+                    {
+                        "id": 18,
+                        "colors": [
+                            "#DF9117",
+                            "#DF9117"
+                        ]
+                    },
+                    {
+                        "id": 19,
+                        "colors": [
+                            "#2DA130",
+                            "#2DA130"
+                        ]
+                    },
+                    {
+                        "id": 20,
+                        "colors": [
+                            "#73BFBE",
+                            "#73BFBE"
+                        ]
+                    },
+                    {
+                        "id": 21,
+                        "colors": [
+                            "#6ABBEE",
+                            "#6ABBEE"
+                        ]
+                    },
+                    {
+                        "id": 22,
+                        "colors": [
+                            "#E58BA5",
+                            "#E58BA5"
+                        ]
+                    },
+                    {
+                        "id": 23,
+                        "colors": [
+                            "#9C68D7",
+                            "#9C68D7"
+                        ]
+                    },
+                    {
+                        "id": 24,
+                        "colors": [
+                            "#ECF9F8",
+                            "#ECF9F8"
+                        ]
+                    }
+                ],
+                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin16/monkeykingloadscreen_16.jpg"
+            }
+        },
+        "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/62.png"
+    },
+    "mordekaiser": {
+        "id": "82",
         "name": "Mordekaiser",
         "skins": {
             "0": {
@@ -26886,7 +27139,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/82.png"
     },
-    "25": {
+    "morgana": {
+        "id": "25",
         "name": "Morgana",
         "skins": {
             "0": {
@@ -27415,7 +27669,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/25.png"
     },
-    "950": {
+    "naafiri": {
+        "id": "950",
         "name": "Naafiri",
         "skins": {
             "0": {
@@ -27556,7 +27811,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/950.png"
     },
-    "267": {
+    "nami": {
+        "id": "267",
         "name": "Nami",
         "skins": {
             "0": {
@@ -28005,7 +28261,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/267.png"
     },
-    "75": {
+    "nasus": {
+        "id": "75",
         "name": "Nasus",
         "skins": {
             "0": {
@@ -28362,7 +28619,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/75.png"
     },
-    "111": {
+    "nautilus": {
+        "id": "111",
         "name": "Nautilus",
         "skins": {
             "0": {
@@ -28604,7 +28862,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/111.png"
     },
-    "518": {
+    "neeko": {
+        "id": "518",
         "name": "Neeko",
         "skins": {
             "0": {
@@ -28936,7 +29195,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/518.png"
     },
-    "76": {
+    "nidalee": {
+        "id": "76",
         "name": "Nidalee",
         "skins": {
             "0": {
@@ -29307,7 +29567,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/76.png"
     },
-    "895": {
+    "nilah": {
+        "id": "895",
         "name": "Nilah",
         "skins": {
             "0": {
@@ -29455,7 +29716,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/895.png"
     },
-    "56": {
+    "nocturne": {
+        "id": "56",
         "name": "Nocturne",
         "skins": {
             "0": {
@@ -29686,7 +29948,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/56.png"
     },
-    "20": {
+    "nunu": {
+        "id": "20",
         "name": "Nunu & Willump",
         "skins": {
             "0": {
@@ -30041,7 +30304,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/20.png"
     },
-    "2": {
+    "olaf": {
+        "id": "2",
         "name": "Olaf",
         "skins": {
             "0": {
@@ -30392,7 +30656,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/2.png"
     },
-    "61": {
+    "orianna": {
+        "id": "61",
         "name": "Orianna",
         "skins": {
             "0": {
@@ -30651,7 +30916,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/61.png"
     },
-    "516": {
+    "ornn": {
+        "id": "516",
         "name": "Ornn",
         "skins": {
             "0": {
@@ -30851,7 +31117,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/516.png"
     },
-    "80": {
+    "pantheon": {
+        "id": "80",
         "name": "Pantheon",
         "skins": {
             "0": {
@@ -31154,7 +31421,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/80.png"
     },
-    "78": {
+    "poppy": {
+        "id": "78",
         "name": "Poppy",
         "skins": {
             "0": {
@@ -31423,7 +31691,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/78.png"
     },
-    "555": {
+    "pyke": {
+        "id": "555",
         "name": "Pyke",
         "skins": {
             "0": {
@@ -31932,7 +32201,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/555.png"
     },
-    "246": {
+    "qiyana": {
+        "id": "246",
         "name": "Qiyana",
         "skins": {
             "0": {
@@ -32271,7 +32541,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/246.png"
     },
-    "133": {
+    "quinn": {
+        "id": "133",
         "name": "Quinn",
         "skins": {
             "0": {
@@ -32428,7 +32699,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/133.png"
     },
-    "497": {
+    "rakan": {
+        "id": "497",
         "name": "Rakan",
         "skins": {
             "0": {
@@ -32737,7 +33009,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/497.png"
     },
-    "33": {
+    "rammus": {
+        "id": "33",
         "name": "Rammus",
         "skins": {
             "0": {
@@ -32958,7 +33231,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/33.png"
     },
-    "421": {
+    "reksai": {
+        "id": "421",
         "name": "Rek'Sai",
         "skins": {
             "0": {
@@ -33206,7 +33480,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/421.png"
     },
-    "526": {
+    "rell": {
+        "id": "526",
         "name": "Rell",
         "skins": {
             "0": {
@@ -33420,7 +33695,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/526.png"
     },
-    "888": {
+    "renata": {
+        "id": "888",
         "name": "Renata Glasc",
         "skins": {
             "0": {
@@ -33638,7 +33914,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/888.png"
     },
-    "58": {
+    "renekton": {
+        "id": "58",
         "name": "Renekton",
         "skins": {
             "0": {
@@ -33945,7 +34222,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/58.png"
     },
-    "107": {
+    "rengar": {
+        "id": "107",
         "name": "Rengar",
         "skins": {
             "0": {
@@ -34279,7 +34557,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/107.png"
     },
-    "92": {
+    "riven": {
+        "id": "92",
         "name": "Riven",
         "skins": {
             "0": {
@@ -34757,7 +35036,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/92.png"
     },
-    "68": {
+    "rumble": {
+        "id": "68",
         "name": "Rumble",
         "skins": {
             "0": {
@@ -34972,7 +35252,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/68.png"
     },
-    "13": {
+    "ryze": {
+        "id": "13",
         "name": "Ryze",
         "skins": {
             "0": {
@@ -35154,7 +35435,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/13.png"
     },
-    "360": {
+    "samira": {
+        "id": "360",
         "name": "Samira",
         "skins": {
             "0": {
@@ -35372,7 +35654,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/360.png"
     },
-    "113": {
+    "sejuani": {
+        "id": "113",
         "name": "Sejuani",
         "skins": {
             "0": {
@@ -35685,7 +35968,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/113.png"
     },
-    "235": {
+    "senna": {
+        "id": "235",
         "name": "Senna",
         "skins": {
             "0": {
@@ -36171,7 +36455,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/235.png"
     },
-    "147": {
+    "seraphine": {
+        "id": "147",
         "name": "Seraphine",
         "skins": {
             "0": {
@@ -36561,7 +36846,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/147.png"
     },
-    "875": {
+    "sett": {
+        "id": "875",
         "name": "Sett",
         "skins": {
             "0": {
@@ -37020,7 +37306,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/875.png"
     },
-    "35": {
+    "shaco": {
+        "id": "35",
         "name": "Shaco",
         "skins": {
             "0": {
@@ -37441,7 +37728,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/35.png"
     },
-    "98": {
+    "shen": {
+        "id": "98",
         "name": "Shen",
         "skins": {
             "0": {
@@ -37786,7 +38074,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/98.png"
     },
-    "102": {
+    "shyvana": {
+        "id": "102",
         "name": "Shyvana",
         "skins": {
             "0": {
@@ -37953,7 +38242,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/102.png"
     },
-    "27": {
+    "singed": {
+        "id": "27",
         "name": "Singed",
         "skins": {
             "0": {
@@ -38127,7 +38417,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/27.png"
     },
-    "14": {
+    "sion": {
+        "id": "14",
         "name": "Sion",
         "skins": {
             "0": {
@@ -38460,7 +38751,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/14.png"
     },
-    "15": {
+    "sivir": {
+        "id": "15",
         "name": "Sivir",
         "skins": {
             "0": {
@@ -38929,7 +39221,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/15.png"
     },
-    "72": {
+    "skarner": {
+        "id": "72",
         "name": "Skarner",
         "skins": {
             "0": {
@@ -39017,7 +39310,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/72.png"
     },
-    "901": {
+    "smolder": {
+        "id": "901",
         "name": "Smolder",
         "skins": {
             "0": {
@@ -39096,7 +39390,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/901.png"
     },
-    "37": {
+    "sona": {
+        "id": "37",
         "name": "Sona",
         "skins": {
             "0": {
@@ -39535,7 +39830,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/37.png"
     },
-    "16": {
+    "soraka": {
+        "id": "16",
         "name": "Soraka",
         "skins": {
             "0": {
@@ -39871,7 +40167,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/16.png"
     },
-    "50": {
+    "swain": {
+        "id": "50",
         "name": "Swain",
         "skins": {
             "0": {
@@ -40149,7 +40446,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/50.png"
     },
-    "517": {
+    "sylas": {
+        "id": "517",
         "name": "Sylas",
         "skins": {
             "0": {
@@ -40513,7 +40811,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/517.png"
     },
-    "134": {
+    "syndra": {
+        "id": "134",
         "name": "Syndra",
         "skins": {
             "0": {
@@ -41011,7 +41310,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/134.png"
     },
-    "223": {
+    "tahmkench": {
+        "id": "223",
         "name": "Tahm Kench",
         "skins": {
             "0": {
@@ -41270,7 +41570,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/223.png"
     },
-    "163": {
+    "taliyah": {
+        "id": "163",
         "name": "Taliyah",
         "skins": {
             "0": {
@@ -41425,7 +41726,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/163.png"
     },
-    "91": {
+    "talon": {
+        "id": "91",
         "name": "Talon",
         "skins": {
             "0": {
@@ -41824,7 +42126,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/91.png"
     },
-    "44": {
+    "taric": {
+        "id": "44",
         "name": "Taric",
         "skins": {
             "0": {
@@ -42004,7 +42307,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/44.png"
     },
-    "17": {
+    "teemo": {
+        "id": "17",
         "name": "Teemo",
         "skins": {
             "0": {
@@ -42357,7 +42661,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/17.png"
     },
-    "412": {
+    "thresh": {
+        "id": "412",
         "name": "Thresh",
         "skins": {
             "0": {
@@ -42806,7 +43111,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/412.png"
     },
-    "18": {
+    "tristana": {
+        "id": "18",
         "name": "Tristana",
         "skins": {
             "0": {
@@ -43270,7 +43576,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/18.png"
     },
-    "48": {
+    "trundle": {
+        "id": "48",
         "name": "Trundle",
         "skins": {
             "0": {
@@ -43465,7 +43772,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/48.png"
     },
-    "23": {
+    "tryndamere": {
+        "id": "23",
         "name": "Tryndamere",
         "skins": {
             "0": {
@@ -43697,7 +44005,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/23.png"
     },
-    "4": {
+    "twistedfate": {
+        "id": "4",
         "name": "Twisted Fate",
         "skins": {
             "0": {
@@ -43973,7 +44282,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/4.png"
     },
-    "29": {
+    "twitch": {
+        "id": "29",
         "name": "Twitch",
         "skins": {
             "0": {
@@ -44357,7 +44667,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/29.png"
     },
-    "77": {
+    "udyr": {
+        "id": "77",
         "name": "Udyr",
         "skins": {
             "0": {
@@ -44428,7 +44739,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/77.png"
     },
-    "6": {
+    "urgot": {
+        "id": "6",
         "name": "Urgot",
         "skins": {
             "0": {
@@ -44645,7 +44957,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/6.png"
     },
-    "110": {
+    "varus": {
+        "id": "110",
         "name": "Varus",
         "skins": {
             "0": {
@@ -45045,7 +45358,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/110.png"
     },
-    "67": {
+    "vayne": {
+        "id": "67",
         "name": "Vayne",
         "skins": {
             "0": {
@@ -45463,7 +45777,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/67.png"
     },
-    "45": {
+    "veigar": {
+        "id": "45",
         "name": "Veigar",
         "skins": {
             "0": {
@@ -45906,7 +46221,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/45.png"
     },
-    "161": {
+    "velkoz": {
+        "id": "161",
         "name": "Vel'Koz",
         "skins": {
             "0": {
@@ -46100,7 +46416,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/161.png"
     },
-    "711": {
+    "vex": {
+        "id": "711",
         "name": "Vex",
         "skins": {
             "0": {
@@ -46241,7 +46558,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/711.png"
     },
-    "254": {
+    "vi": {
+        "id": "254",
         "name": "Vi",
         "skins": {
             "0": {
@@ -46561,7 +46879,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/254.png"
     },
-    "234": {
+    "viego": {
+        "id": "234",
         "name": "Viego",
         "skins": {
             "0": {
@@ -46852,7 +47171,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/234.png"
     },
-    "112": {
+    "viktor": {
+        "id": "112",
         "name": "Viktor",
         "skins": {
             "0": {
@@ -47013,7 +47333,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/112.png"
     },
-    "8": {
+    "vladimir": {
+        "id": "8",
         "name": "Vladimir",
         "skins": {
             "0": {
@@ -47330,7 +47651,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/8.png"
     },
-    "106": {
+    "volibear": {
+        "id": "106",
         "name": "Volibear",
         "skins": {
             "0": {
@@ -47506,7 +47828,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/106.png"
     },
-    "19": {
+    "warwick": {
+        "id": "19",
         "name": "Warwick",
         "skins": {
             "0": {
@@ -47840,174 +48163,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/19.png"
     },
-    "62": {
-        "name": "Wukong",
-        "skins": {
-            "0": {
-                "name": "Wukong",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/base/monkeykingloadscreen.jpg"
-            },
-            "1": {
-                "name": "Volcanic Wukong",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin01/monkeykingloadscreen_1.jpg"
-            },
-            "2": {
-                "name": "General Wukong",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin02/monkeykingloadscreen_2.jpg"
-            },
-            "3": {
-                "name": "Jade Dragon Wukong",
-                "chromas": [
-                    {
-                        "id": 25,
-                        "colors": [
-                            "#5F432B",
-                            "#5F432B"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin03/monkeykingloadscreen_3.jpg"
-            },
-            "4": {
-                "name": "Underworld Wukong",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin04/monkeykingloadscreen_4.jpg"
-            },
-            "5": {
-                "name": "Radiant Wukong",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin05/monkeykingloadscreen_5.jpg"
-            },
-            "6": {
-                "name": "Lancer Stratus Wukong",
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin06/monkeykingloadscreen_6.jpg"
-            },
-            "7": {
-                "name": "Battle Academia Wukong",
-                "chromas": [
-                    {
-                        "id": 8,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 9,
-                        "colors": [
-                            "#E58BA5",
-                            "#E58BA5"
-                        ]
-                    },
-                    {
-                        "id": 10,
-                        "colors": [
-                            "#FFEE59",
-                            "#FFEE59"
-                        ]
-                    },
-                    {
-                        "id": 11,
-                        "colors": [
-                            "#2756CE",
-                            "#2756CE"
-                        ]
-                    },
-                    {
-                        "id": 12,
-                        "colors": [
-                            "#2DA130",
-                            "#2DA130"
-                        ]
-                    },
-                    {
-                        "id": 13,
-                        "colors": [
-                            "#ECF9F8",
-                            "#ECF9F8"
-                        ]
-                    },
-                    {
-                        "id": 14,
-                        "colors": [
-                            "#5F432B",
-                            "#5F432B"
-                        ]
-                    },
-                    {
-                        "id": 15,
-                        "colors": [
-                            "#27211C",
-                            "#27211C"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin07/monkeykingloadscreen_7.jpg"
-            },
-            "16": {
-                "name": "Elderwood Wukong",
-                "chromas": [
-                    {
-                        "id": 17,
-                        "colors": [
-                            "#D33528",
-                            "#D33528"
-                        ]
-                    },
-                    {
-                        "id": 18,
-                        "colors": [
-                            "#DF9117",
-                            "#DF9117"
-                        ]
-                    },
-                    {
-                        "id": 19,
-                        "colors": [
-                            "#2DA130",
-                            "#2DA130"
-                        ]
-                    },
-                    {
-                        "id": 20,
-                        "colors": [
-                            "#73BFBE",
-                            "#73BFBE"
-                        ]
-                    },
-                    {
-                        "id": 21,
-                        "colors": [
-                            "#6ABBEE",
-                            "#6ABBEE"
-                        ]
-                    },
-                    {
-                        "id": 22,
-                        "colors": [
-                            "#E58BA5",
-                            "#E58BA5"
-                        ]
-                    },
-                    {
-                        "id": 23,
-                        "colors": [
-                            "#9C68D7",
-                            "#9C68D7"
-                        ]
-                    },
-                    {
-                        "id": 24,
-                        "colors": [
-                            "#ECF9F8",
-                            "#ECF9F8"
-                        ]
-                    }
-                ],
-                "loadscreen": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/monkeyking/skins/skin16/monkeykingloadscreen_16.jpg"
-            }
-        },
-        "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/62.png"
-    },
-    "498": {
+    "xayah": {
+        "id": "498",
         "name": "Xayah",
         "skins": {
             "0": {
@@ -48388,7 +48545,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/498.png"
     },
-    "101": {
+    "xerath": {
+        "id": "101",
         "name": "Xerath",
         "skins": {
             "0": {
@@ -48599,7 +48757,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/101.png"
     },
-    "5": {
+    "xinzhao": {
+        "id": "5",
         "name": "Xin Zhao",
         "skins": {
             "0": {
@@ -48904,7 +49063,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/5.png"
     },
-    "157": {
+    "yasuo": {
+        "id": "157",
         "name": "Yasuo",
         "skins": {
             "0": {
@@ -49492,7 +49652,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/157.png"
     },
-    "777": {
+    "yone": {
+        "id": "777",
         "name": "Yone",
         "skins": {
             "0": {
@@ -49992,7 +50153,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/777.png"
     },
-    "83": {
+    "yorick": {
+        "id": "83",
         "name": "Yorick",
         "skins": {
             "0": {
@@ -50331,7 +50493,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/83.png"
     },
-    "350": {
+    "yuumi": {
+        "id": "350",
         "name": "Yuumi",
         "skins": {
             "0": {
@@ -50751,7 +50914,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/350.png"
     },
-    "154": {
+    "zac": {
+        "id": "154",
         "name": "Zac",
         "skins": {
             "0": {
@@ -50975,7 +51139,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/154.png"
     },
-    "238": {
+    "zed": {
+        "id": "238",
         "name": "Zed",
         "skins": {
             "0": {
@@ -51442,7 +51607,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/238.png"
     },
-    "221": {
+    "zeri": {
+        "id": "221",
         "name": "Zeri",
         "skins": {
             "0": {
@@ -51718,7 +51884,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/221.png"
     },
-    "115": {
+    "ziggs": {
+        "id": "115",
         "name": "Ziggs",
         "skins": {
             "0": {
@@ -51997,7 +52164,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/115.png"
     },
-    "26": {
+    "zilean": {
+        "id": "26",
         "name": "Zilean",
         "skins": {
             "0": {
@@ -52151,7 +52319,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/26.png"
     },
-    "142": {
+    "zoe": {
+        "id": "142",
         "name": "Zoe",
         "skins": {
             "0": {
@@ -52441,7 +52610,8 @@
         },
         "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/142.png"
     },
-    "143": {
+    "zyra": {
+        "id": "143",
         "name": "Zyra",
         "skins": {
             "0": {
