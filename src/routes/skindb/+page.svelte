@@ -187,7 +187,7 @@
 	}
 	.chroma-list div{
 		display: flex;
-		margin-inline: auto;
+		margin-left: 3rem;
 		align-items: center;
 	}
 </style>
