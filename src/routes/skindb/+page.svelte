@@ -1,11 +1,75 @@
 <script>
-	// import json data file
-	import data from './data.json';
-	console.log(data);
+	import { onMount } from 'svelte';
 
-	let selected_champion = localStorage.getItem('selected_champion') ?? '1';
+	let output = {};
+	let selectedChampion = localStorage.getItem('selected_champion') ?? '1';
 
-	$: localStorage.setItem('selected_champion', selected_champion);
+	$: localStorage.setItem('selected_champion', selectedChampion);
+
+	async function fetchData() {
+		try {
+			const [champData, skinData] = await Promise.all([
+				fetch(
+					'https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json'
+				).then((res) => res.json()),
+				fetch(
+					'https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/skins.json'
+				).then((res) => res.json())
+			]);
+
+			processData(champData, skinData);
+		} catch (error) {
+			console.error('Error fetching data:', error);
+		}
+	}
+
+	function processData(champData, skinData) {
+		const champAliasMap = champData.reduce((acc, champ) => {
+			if (champ.name !== 'None') {
+				acc[String(champ.id)] = champ.alias.toLowerCase();
+			}
+			return acc;
+		}, {});
+
+		output = champData.reduce((acc, champ) => {
+			const cid = String(champ.id);
+			if (champ.name !== 'None') {
+				const alias = champAliasMap[cid];
+				acc[alias] = {
+					id: cid,
+					name: champ.name,
+					skins: {}
+				};
+			}
+			return acc;
+		}, {});
+		
+		Object.entries(skinData).forEach(([skin, skinDetails]) => {
+			const cid = String(parseInt(skin.slice(0, -3)));
+			const sid = String(parseInt(skin.slice(-3)));
+
+			if (champAliasMap[cid]) {
+				const alias = champAliasMap[cid];
+				output[alias].skins[sid] = {
+					name: skinDetails.name,
+					loadscreen: `https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/${skinDetails.loadScreenPath
+						.replace('/lol-game-data/assets/', '')
+						.toLowerCase()}`
+				};
+
+				if (skinDetails.chromas) {
+					output[alias].skins[sid].chromas = skinDetails.chromas.map((chroma) => ({
+						id: parseInt(String(chroma.id).slice(-3)),
+						colors: chroma.colors
+					}));
+				}
+			}
+		});
+		// sorted by name
+		output = Object.fromEntries(Object.entries(output).sort((a, b) => a[1].name.localeCompare(b[1].name)));
+	}
+
+	onMount(fetchData);
 </script>
 
 <svelte:head>
@@ -23,29 +87,30 @@
 		<!-- centered select -->
 		<div class="input-group">
 			<label for={'Display'}>Select Champion:</label>
-
-			<select id={'SelectedChamp'} bind:value={selected_champion}>
-				{#each Object.keys(data) as key}
-					<option value={key}>{data[key].name}</option>
-				{/each}
-			</select>
+			<select id={'SelectedChamp'} bind:value={selectedChampion}>
+				{#if Object.keys(output).length > 0}
+				  {#each Object.keys(output) as key}
+					<option value={key}>{output[key].name}</option>
+				  {/each}
+				{/if}
+			  </select>
 		</div>
-		{#if data[selected_champion] != undefined}
+		{#if output[selectedChampion] != undefined}
 			<div class="skin-list">
-				{#each Object.keys(data[selected_champion].skins) as key}
+				{#each Object.keys(output[selectedChampion].skins) as key}
 					<div class="skin">
 						<div class="side_img">
-							<img src={data[selected_champion].skins[key].loadscreen} alt={key.name} />
+							<img src={output[selectedChampion].skins[key].loadscreen} alt={key.name} />
 						</div>
 
 						<div class="skin-info">
 							<h3>
-								{data[selected_champion].skins[key].name} - <span class="highlight">skin{key}</span>
+								{output[selectedChampion].skins[key].name} - <span class="highlight">skin{key}</span>
 							</h3>
-							{#if data[selected_champion].skins[key].chromas != undefined}
+							{#if output[selectedChampion].skins[key].chromas != undefined}
 								<h4>Chromas:</h4>
 								<div class="chroma-list">
-									{#each data[selected_champion].skins[key].chromas as chroma}
+									{#each output[selectedChampion].skins[key].chromas as chroma}
 										<div class="chroma">
 											<span
 												class="chroma-badge"
@@ -143,15 +208,14 @@
 		flex-direction: row; /* Row so image is on the side */
 		width: 100%; /* Make the card fill available width */
 		color: #fff; /* Vertically center items if desired */
-		
 	}
 
 	.side_img {
 		width: 150px; /* Fixed width for the image area */
 		height: 100%; /* Ensure full height coverage */
 		overflow: hidden;
-		background : #000;
-		display:grid;
+		background: #000;
+		display: grid;
 		place-items: center;
 	}
 	span.highlight {
