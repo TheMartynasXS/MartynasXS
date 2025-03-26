@@ -1,17 +1,19 @@
 <script>
 	// import json data file
 	import data from './data.json';
-	console.log(data)
-	
+	console.log(data);
+
 	let selected_champion = localStorage.getItem('selected_champion') ?? '1';
-	
+
 	$: localStorage.setItem('selected_champion', selected_champion);
 </script>
 
-<header>
-    <h1>SkinDB</h1>
-    <p>List for skin IDs</p>
-</header>
+<svelte:head>
+	<title>SkinDB</title>
+	<meta name="description" content="Skin database for League of Legends" />
+	<meta name="keywords" content="League of Legends, Skins, SkinDB" />
+	<meta name="author" content="MartynasXS" />
+</svelte:head>
 
 <div class="page">
 	<div class="header">
@@ -44,7 +46,7 @@
 								<h4>Chromas:</h4>
 								<div class="chroma-list">
 									{#each data[selected_champion].skins[key].chromas as chroma}
-										<div>
+										<div class="chroma">
 											<span
 												class="chroma-badge"
 												style="background: linear-gradient( -45deg, {chroma.colors[0]}, {chroma
@@ -55,7 +57,7 @@
 									{/each}
 								</div>
 							{:else}
-							<h4>No Chromas </h4>
+								<h4>No Chromas</h4>
 							{/if}
 						</div>
 						<!-- <p>{data[selected_champion].skins[key]}</p> -->
@@ -106,18 +108,24 @@
 		gap: 1rem;
 		margin-top: 1rem;
 	}
+	/* media */
+	@media (max-width: 650px) {
+		.skin-list {
+			grid-template-columns: 1fr;
+		}
+	}
 	.input-group {
 		display: flex;
 		align-items: center;
 		margin: 1rem auto;
 		justify-content: center;
-		}
+	}
 
 	.input-group label {
 		margin-right: 0.5rem;
 		color: #fff;
 		font-weight: bold;
-		}
+	}
 
 	#SelectedChamp {
 		padding: 0.25rem 0.5rem;
@@ -135,13 +143,16 @@
 		flex-direction: row; /* Row so image is on the side */
 		width: 100%; /* Make the card fill available width */
 		color: #fff; /* Vertically center items if desired */
+		
 	}
 
 	.side_img {
 		width: 150px; /* Fixed width for the image area */
 		height: 100%; /* Ensure full height coverage */
 		overflow: hidden;
-		flex-shrink: 0; /* Prevent image section from shrinking */
+		background : #000;
+		display:grid;
+		place-items: center;
 	}
 	span.highlight {
 		color: #f0f;
@@ -152,24 +163,32 @@
 		display: block;
 	}
 
-	.skin h3{
+	.skin h3 {
 		text-align: center;
 		padding: 0.5rem;
-		padding-block:1rem;
-		margin:0;
+		padding-block: 1rem;
+		margin: 0;
 		/* font-size: from 1.2 to 1.5; */
 		font-size: 1.2rem;
 		background-color: #00000022;
 	}
-	.skin h4{
+	.skin h4 {
 		text-align: center;
 		font-size: 1rem;
 	}
 	div.chroma-list {
-		display:grid;
+		display: grid;
 		gap: 0.5rem;
 		list-style-type: none;
 		grid-template-columns: 1fr 1fr;
+		padding-bottom: 2rem;
+	}
+	/* small viewport */
+	/* chroma list 1 column */
+	@media (max-width: 1200px) {
+		div.chroma-list {
+			grid-template-columns: 1fr !important;
+		}
 	}
 	/* Optional: add a container for text to size the content area */
 	.skin > div:last-child {
@@ -184,10 +203,11 @@
 		height: 20px;
 		border-radius: 50%;
 		margin-right: 0.5rem;
+		border: 2px inset var(--bg-300);
 	}
-	.chroma-list div{
+	.chroma-list > .chroma {
 		display: flex;
-		margin-left: 3rem;
+		margin-inline: auto;
 		align-items: center;
 	}
 </style>
