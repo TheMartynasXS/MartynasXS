@@ -10,10 +10,10 @@
 		try {
 			const [champData, skinData] = await Promise.all([
 				fetch(
-					'https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json'
+					'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json'
 				).then((res) => res.json()),
 				fetch(
-					'https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/skins.json'
+					'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/skins.json'
 				).then((res) => res.json())
 			]);
 
@@ -52,7 +52,7 @@
 				const alias = champAliasMap[cid];
 				output[alias].skins[sid] = {
 					name: skinDetails.name,
-					loadscreen: `https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/${skinDetails.loadScreenPath
+					loadscreen: `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/${skinDetails.loadScreenPath
 						.replace('/lol-game-data/assets/', '')
 						.toLowerCase()}`
 				};
