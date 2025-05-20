@@ -1,75 +1,18 @@
 <script>
-	import { onMount } from 'svelte';
-
 	let output = {};
+
+	let lastUpdate = new Date();
+	fetch('https://skindb.martynasxs.dev/data.json')
+		.then((res) => res.json())
+		.then((data) => {
+			console.log(data);
+			output = data.data;
+			//timestamp:	"2025-05-20T21:00:47.745Z"
+			lastUpdate = new Date(data.timestamp);
+		});
 	let selectedChampion = localStorage.getItem('selected_champion') ?? '1';
 
 	$: localStorage.setItem('selected_champion', selectedChampion);
-
-	async function fetchData() {
-		try {
-			const [champData, skinData] = await Promise.all([
-				fetch(
-					'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json'
-				).then((res) => res.json()),
-				fetch(
-					'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/skins.json'
-				).then((res) => res.json())
-			]);
-
-			processData(champData, skinData);
-		} catch (error) {
-			console.error('Error fetching data:', error);
-		}
-	}
-
-	function processData(champData, skinData) {
-		const champAliasMap = champData.reduce((acc, champ) => {
-			if (champ.name !== 'None') {
-				acc[String(champ.id)] = champ.alias.toLowerCase();
-			}
-			return acc;
-		}, {});
-
-		output = champData.reduce((acc, champ) => {
-			const cid = String(champ.id);
-			if (champ.name !== 'None') {
-				const alias = champAliasMap[cid];
-				acc[alias] = {
-					id: cid,
-					name: champ.name,
-					skins: {}
-				};
-			}
-			return acc;
-		}, {});
-		
-		Object.entries(skinData).forEach(([skin, skinDetails]) => {
-			const cid = String(parseInt(skin.slice(0, -3)));
-			const sid = String(parseInt(skin.slice(-3)));
-
-			if (champAliasMap[cid]) {
-				const alias = champAliasMap[cid];
-				output[alias].skins[sid] = {
-					name: skinDetails.name,
-					loadscreen: `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/${skinDetails.loadScreenPath
-						.replace('/lol-game-data/assets/', '')
-						.toLowerCase()}`
-				};
-
-				if (skinDetails.chromas) {
-					output[alias].skins[sid].chromas = skinDetails.chromas.map((chroma) => ({
-						id: parseInt(String(chroma.id).slice(-3)),
-						colors: chroma.colors
-					}));
-				}
-			}
-		});
-		// sorted by name
-		output = Object.fromEntries(Object.entries(output).sort((a, b) => a[1].name.localeCompare(b[1].name)));
-	}
-
-	onMount(fetchData);
 </script>
 
 <svelte:head>
@@ -82,18 +25,18 @@
 <div class="page">
 	<div class="header">
 		<a href="/">Home</a>
+		<p>Last update: {lastUpdate.toLocaleDateString()}</p>
 	</div>
 	<div>
-		<!-- centered select -->
 		<div class="input-group">
 			<label for={'Display'}>Select Champion:</label>
 			<select id={'SelectedChamp'} bind:value={selectedChampion}>
 				{#if Object.keys(output).length > 0}
-				  {#each Object.keys(output) as key}
-					<option value={key}>{output[key].name}</option>
-				  {/each}
+					{#each Object.keys(output) as key}
+						<option value={key}>{output[key].name}</option>
+					{/each}
 				{/if}
-			  </select>
+			</select>
 		</div>
 		{#if output[selectedChampion] != undefined}
 			<div class="skin-list">
@@ -104,9 +47,16 @@
 						</div>
 
 						<div class="skin-info">
-							<h3>
-								{output[selectedChampion].skins[key].name} - <span class="highlight">skin{key}</span>
-							</h3>
+							{#if output[selectedChampion].skins[key].tiers != undefined}
+								<h3>
+									{output[selectedChampion].skins[key].name}
+								</h3>
+							{:else}
+								<h3>
+									{output[selectedChampion].skins[key].name} -
+									<span class="highlight">skin{key}</span>
+								</h3>
+							{/if}
 							{#if output[selectedChampion].skins[key].chromas != undefined}
 								<h4>Chromas:</h4>
 								<div class="chroma-list">
@@ -121,11 +71,17 @@
 										</div>
 									{/each}
 								</div>
+							{:else if output[selectedChampion].skins[key].tiers != undefined}
+								<h4>Tiers:</h4>
+								{#each output[selectedChampion].skins[key].tiers as tier}
+									<div class="tier" style="padding:0.5rem">
+										{tier.name} <span class="highlight">skin{tier.id}</span>
+									</div>
+								{/each}
 							{:else}
 								<h4>No Chromas</h4>
 							{/if}
 						</div>
-						<!-- <p>{data[selected_champion].skins[key]}</p> -->
 					</div>
 				{/each}
 			</div>
@@ -135,16 +91,22 @@
 	</div>
 </div>
 
-<!-- for entry in data -->
 <style>
 	.header {
 		background-color: #444;
 		padding: 1rem;
+		display: flex;
 	}
 
 	.header a {
 		color: #fff;
 		text-decoration: none;
+	}
+	.header > * {
+		margin-block: 1rem;
+	}
+	.header > p {
+		margin-left: auto;
 	}
 	.page {
 		font-family: Arial, sans-serif;
