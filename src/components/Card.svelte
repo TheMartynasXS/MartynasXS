@@ -105,6 +105,7 @@
 		grid-template-columns: 10rem 1fr;
 		border-radius: 0.5rem;
 		/* Optionally set a max-width or width if needed */
+		border: 2px solid var(--bg-100);
 	}
 	.image-container {
 		position: relative;
