@@ -18,7 +18,7 @@
 
 <div class="page">
 	<div class="header">
-		<a href="/">Home</a>
+		<h1>MartynasXS SkinDB</h1>
 		<p>Last update: {lastUpdate.toLocaleDateString()}</p>
 	</div>
 	<div>
@@ -55,10 +55,6 @@
 		display: flex;
 	}
 
-	.header a {
-		color: #fff;
-		text-decoration: none;
-	}
 	.header > * {
 		margin-block: 1rem;
 	}
