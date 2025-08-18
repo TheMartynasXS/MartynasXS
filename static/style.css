@@ -5,10 +5,12 @@
 
     --text-primary: #ececec;
     --text-secondary: #cacaca;
+    --text-muted: #a0a0a0;
 
     --bg-100: #484950;
     --bg-200: #3a3b41;
     --bg-300: #303136;
+    --bg-400: #26272c;
     --shadow: #00000080;
     --font: 'Montserrat', sans-serif;
     
@@ -45,7 +47,7 @@ html {
 }
 
 body {
-    background-color: #303136;
+    background-color: var(--bg-200);
     height: 100dvh;
     max-height: 100dvh;
     margin: 0px;
