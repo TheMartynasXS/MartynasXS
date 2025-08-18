@@ -105,7 +105,7 @@
                     {/each}
                 </ul>
             {:else}
-                <div style="margin-inline:auto;">No chromas available</div>
+                <div style="margin:auto;">No chromas available</div>
             {/if}
         </div>
     </div>
@@ -210,7 +210,7 @@
         overflow-y: auto;
         max-height: calc(13rem); /* Set a max-height for scrolling */
         padding: 0;
-        place-items: center;
+        /* place-items: center; */
     }
     .right ul {
         margin: 0;
