@@ -1,9 +1,9 @@
 <script>
-	import Card from 'comps/Card.svelte';
+	import Card from "$lib/Card.svelte";
 	let output = {};
 
 	let lastUpdate = new Date();
-	fetch('https://skindb.martynasxs.dev/data.json')
+	fetch("https://skindb.martynasxs.dev/data.json")
 		.then((res) => res.json())
 		.then((data) => {
 			console.log(data);
@@ -11,9 +11,9 @@
 			//timestamp:	"2025-05-20T21:00:47.745Z"
 			lastUpdate = new Date(data.timestamp);
 		});
-	let selectedChampion = localStorage.getItem('selected_champion') ?? '1';
+	let selectedChampion = localStorage.getItem("selected_champion") ?? "1";
 
-	$: localStorage.setItem('selected_champion', selectedChampion);
+	$: localStorage.setItem("selected_champion", selectedChampion);
 </script>
 
 <div class="page">
@@ -23,8 +23,8 @@
 	</div>
 	<div>
 		<div class="input-group">
-			<label for={'Display'}>Select Champion:</label>
-			<select id={'SelectedChamp'} bind:value={selectedChampion}>
+			<label for={"Display"}>Select Champion:</label>
+			<select id={"SelectedChamp"} bind:value={selectedChampion}>
 				{#if Object.keys(output).length > 0}
 					{#each Object.keys(output) as key}
 						<option value={key}>{output[key].name}</option>
