@@ -44,11 +44,43 @@ button {
 
 html {
     height: 100vh;
-    background-color: var(--bg-200);
+    background: linear-gradient(
+        130deg,
+        oklab(25.839000000000002% 0.0435 -0.04831) 0%,
+        oklab(22.903000000000002% 0.00004 -0.04777) 100%
+    );
+
+    background: -moz-linear-gradient(
+        130deg,
+        oklab(25.839000000000002% 0.0435 -0.04831) 0%,
+        oklab(22.903000000000002% 0.00004 -0.04777) 100%
+    );
+
+    background: -webkit-linear-gradient(
+        130deg,
+        oklab(25.839000000000002% 0.0435 -0.04831) 0%,
+        oklab(22.903000000000002% 0.00004 -0.04777) 100%
+    );
 }
 
 body {
-    background-color: var(--bg-200);
+    background: linear-gradient(
+        130deg,
+        oklab(25.839000000000002% 0.0435 -0.04831) 0%,
+        oklab(22.903000000000002% 0.00004 -0.04777) 100%
+    );
+
+    background: -moz-linear-gradient(
+        130deg,
+        oklab(25.839000000000002% 0.0435 -0.04831) 0%,
+        oklab(22.903000000000002% 0.00004 -0.04777) 100%
+    );
+
+    background: -webkit-linear-gradient(
+        130deg,
+        oklab(25.839000000000002% 0.0435 -0.04831) 0%,
+        oklab(22.903000000000002% 0.00004 -0.04777) 100%
+    );
     height: 100dvh;
     max-height: 100dvh;
     margin: 0px;

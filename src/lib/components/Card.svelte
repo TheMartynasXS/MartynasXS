@@ -1,41 +1,57 @@
 <script>
-	export let skin = {};
-	export let skinID = 0;
-	export let champID = 0;
+	let { skin, skinID, champID } = $props();
 
-	let preview = '';
-
+	let preview = $state("");
+	if (!skin && !skinID && !champID) {
+		skin = {
+			name: "",
+			loadscreen: "",
+			rarity: "",
+		};
+	}
 	function onMouseEnter(url) {
 		preview = url;
-		console.log('Preview URL:', preview);
+		console.log("Preview URL:", preview);
 	}
 
 	function onMouseLeave() {
-		preview = '';
+		preview = "";
 	}
 </script>
 
 <div class="card">
 	<div class="image-container">
-		<img
-			class="image"
-			src={skin.loadscreen}
-			class:dimmed={preview != ''}
-			width="100%"
-			alt={skin.name}
-		/>
-		{#if skin.rarity == 'kEpic'}
+		{#if skin && skin.loadscreen}
+			<img
+				class="image"
+				src={skin.loadscreen}
+				class:dimmed={preview != ""}
+				width="100%"
+				alt={skin.name}
+			/>
+		{:else}
+			<div class="placeholder"></div>
+		{/if}
+		{#if skin.rarity == "kEpic"}
 			<img class="rarity" src="/icons/epic.png" alt="Epic Skin" />
-		{:else if skin.rarity == 'kLegendary'}
-			<img class="rarity" src="/icons/legendary.png" alt="Legendary Skin" />
-		{:else if skin.rarity == 'kMythic'}
+		{:else if skin.rarity == "kLegendary"}
+			<img
+				class="rarity"
+				src="/icons/legendary.png"
+				alt="Legendary Skin"
+			/>
+		{:else if skin.rarity == "kMythic"}
 			<img class="rarity" src="/icons/mythic.png" alt="Mythic Skin" />
-		{:else if skin.rarity == 'kUltimate'}
+		{:else if skin.rarity == "kUltimate"}
 			<img class="rarity" src="/icons/ultimate.png" alt="Ultimate Skin" />
-		{:else if skin.rarity == 'kExalted'}
+		{:else if skin.rarity == "kExalted"}
 			<img class="rarity" src="/icons/exalted.png" alt="Exalted Skin" />
-		{:else if skin.rarity == 'kTranscendent'}
-			<img class="rarity" src="/icons/transcendent.png" alt="Transcendent Skin" />
+		{:else if skin.rarity == "kTranscendent"}
+			<img
+				class="rarity"
+				src="/icons/transcendent.png"
+				alt="Transcendent Skin"
+			/>
 		{:else}
 			<img class="rarity" src="/icons/standard.png" alt="normal skin" />
 		{/if}
@@ -43,7 +59,7 @@
 			class="preview"
 			src={preview}
 			style="display: {preview ? 'block' : 'none'};"
-			alt={'hover preview'}
+			alt={"hover preview"}
 		/>
 	</div>
 	<div class="content">
@@ -51,22 +67,24 @@
 			{#if skin.isLegacy}
 				<img src="/icons/icon-legacy.png" alt="Legacy Skin" />
 			{/if}
-			<span>{skin.name}</span>
+			{#if skin.isPBE}
+				<img src="/icons/pbe.webp" alt="PBE Skin" />
+			{/if}
+			<span class="skin-name">{skin.name}</span>
 			<span class="skinid">&nbsp;(skin {skinID})</span>
 		</div>
 		<div class="left">
 			<ul>
 				<li>
-					<a
-						href="https://modelviewer.lol/model-viewer?id={champID}{skinID
-							.toString()
-							.padStart(3, '0')}"
-						target="_blank">View in 3D</a
-					>
+					{#if skin.name != ""}
+						<a
+							href="https://modelviewer.lol/model-viewer?id={champID}{skinID
+								.toString()
+								.padStart(3, '0')}"
+							target="_blank">View in 3D</a
+						><br />
+					{/if}
 				</li>
-				{#if skin.isPBE}
-					<li><img src="/icons/pbe.webp" alt="PBE Skin" /></li>
-				{/if}
 			</ul>
 		</div>
 		<div class="right">
@@ -74,19 +92,26 @@
 				<ul>
 					{#each skin.chromas as chroma}
 						<li
-							on:mouseenter={() => onMouseEnter(chroma.tile)}
-							on:mouseleave={() => onMouseLeave()}
+							onmouseenter={() => onMouseEnter(chroma.tile)}
+							onmouseleave={() => onMouseLeave()}
 						>
 							<div
 								class="color_badge"
-								style="--a_color:{chroma.colors[0]}; --b_color:{chroma.colors[1]}"
-							/>
+								style="--a_color:{chroma
+									.colors[0]}; --b_color:{chroma.colors[1]}"
+							></div>
 							<div>
 								<a
 									href="https://modelviewer.lol/model-viewer?id={champID}{skinID
 										.toString()
-										.padStart(3, '0')}&chroma={champID}{chroma.id.toString().padStart(3, '0')}"
-									target="_blank">skin {chroma.id} (3d viewer)</a
+										.padStart(
+											3,
+											'0',
+										)}&chroma={champID}{chroma.id
+										.toString()
+										.padStart(3, '0')}"
+									target="_blank"
+									>skin {chroma.id} (3d viewer)</a
 								>
 							</div>
 						</li>
@@ -100,12 +125,12 @@
 </div>
 
 <style>
+	.skin-name {
+		/* limit to number of words per line */
+	}
 	.card {
 		display: grid;
 		grid-template-columns: 10rem 1fr;
-		border-radius: 0.5rem;
-		/* Optionally set a max-width or width if needed */
-		border: 2px solid var(--bg-100);
 	}
 	.image-container {
 		position: relative;
@@ -139,12 +164,18 @@
 	.content {
 		display: grid;
 		grid-template-areas:
-			'title title'
-			'left right';
+			"title title"
+			"left right";
 		grid-template-columns: 3fr 4fr;
 		grid-template-rows: 4rem 1fr;
 		gap: 0.5rem;
-		background-color: var(--bg-300);
+
+		background: rgba(18, 18, 18, 0.4);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(13.1px);
+		-webkit-backdrop-filter: blur(13.1px);
+		border: 1px solid rgba(18, 18, 18, 0.4);
+
 		border-radius: 0 0.5rem 0.5rem 0;
 		height: 100%; /* Ensure content fills the card */
 		min-height: 15rem; /* Or whatever minimum you want */
@@ -154,10 +185,17 @@
 		display: flex;
 		place-content: center;
 		align-items: center;
-		background-color: var(--bg-400);
+
+		background: rgba(18, 18, 18, 0.4);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(13.1px);
+		-webkit-backdrop-filter: blur(13.1px);
+		border: 1px solid rgba(18, 18, 18, 0.4);
+
 		height: 4rem;
 		gap: 0.25rem;
 		border-radius: 0 0.5rem 0 0;
+		padding-inline: 1rem;
 	}
 	.title img {
 		width: 1.5rem;
@@ -165,17 +203,20 @@
 	}
 	.title .skinid {
 		color: var(--text-muted);
+		min-width: fit-content;
+		word-break: keep-all;
+		word-wrap: none;
 	}
 	.color_badge {
 		background: var(--b_color);
 		display: inline-block;
 		width: 1rem;
 		height: 1rem;
-		border-radius: 50%;
+		border-radius: 0 50% 50% 0;
 		margin-left: 0.25rem;
 	}
 	.color_badge::before {
-		content: ' ';
+		content: " ";
 		position: relative;
 		background: var(--a_color);
 		display: inline-block;
@@ -224,5 +265,15 @@
 		transform: translate(-50%, -50%);
 		margin: 0;
 		display: none;
+	}
+	.placeholder {
+		height: 100%;
+		width: 100%;
+		background: rgba(18, 18, 18, 0.4);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(13.1px);
+		-webkit-backdrop-filter: blur(13.1px);
+		border: 1px solid rgba(18, 18, 18, 0.4);
+		border-radius: 0.5rem 0 0 0.5rem;
 	}
 </style>

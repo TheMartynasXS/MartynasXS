@@ -1,112 +1,89 @@
 <script>
-	import Card from "$lib/Card.svelte";
-	let output = {};
+    import logo from "$lib/images/no_bg.png";
+    import Navbar from "$lib/components/Navbar.svelte";
 
-	let lastUpdate = new Date();
-	fetch("https://skindb.martynasxs.dev/data.json")
-		.then((res) => res.json())
-		.then((data) => {
-			console.log(data);
-			output = data.data;
-			//timestamp:	"2025-05-20T21:00:47.745Z"
-			lastUpdate = new Date(data.timestamp);
-		});
-	let selectedChampion = localStorage.getItem("selected_champion") ?? "1";
-
-	$: localStorage.setItem("selected_champion", selectedChampion);
+    import runeforge from "$lib/images/runeforge.png";
 </script>
 
-<div class="page">
-	<div class="header">
-		<h1>MartynasXS SkinDB</h1>
-		<p>Last update: {lastUpdate.toLocaleDateString()}</p>
-	</div>
-	<div>
-		<div class="input-group">
-			<label for={"Display"}>Select Champion:</label>
-			<select id={"SelectedChamp"} bind:value={selectedChampion}>
-				{#if Object.keys(output).length > 0}
-					{#each Object.keys(output) as key}
-						<option value={key}>{output[key].name}</option>
-					{/each}
-				{/if}
-			</select>
-		</div>
-		{#if output[selectedChampion] != undefined}
-			<div class="skin-list">
-				{#each Object.keys(output[selectedChampion].skins) as key}
-					<Card
-						skin={output[selectedChampion].skins[key]}
-						skinID={key}
-						champID={output[selectedChampion].id}
-					/>
-				{/each}
-			</div>
-		{:else}
-			"loading."
-		{/if}
-	</div>
+<Navbar />
+
+<div class="container">
+    <section>
+        <h2>
+            Web Developer
+            <a href="https://runeforge.dev"
+                ><span class="accent">@Runeforge.dev</span></a
+            >
+        </h2>
+        <div class="split">
+            <p>
+                Runeforge.dev is a publishing platform for custom League of
+                Legends content, including modifications of characters,
+                environments and user interfaces.
+            </p>
+
+            <img width="100%" src={runeforge} alt="Runeforge Interface" />
+        </div>
+    </section>
+    <section>
+        <h2>
+            Developer
+            <a href="https://github.com/LeagueToolkit/"
+                ><span class="accent">@LeagueToolkit</span></a
+            >
+        </h2>
+        <p>
+            LeagueToolkit is an open-source library that provides a
+            comprehensive set of tools and utilities for developers working with
+            the League of Legends ecosystem. It offers a wide range of features,
+            including API wrappers, data models, and helper functions, making it
+            easier to interact with Riot Games' APIs and build applications
+            related to League of Legends.
+        </p>
+    </section>
 </div>
 
 <style>
-	.header {
-		background-color: var(--bg-100);
-		padding: 1rem;
-		display: flex;
-	}
-
-	.header > * {
-		margin-block: 1rem;
-	}
-	.header > p {
-		margin-left: auto;
-	}
-	.page {
-		font-family: Arial, sans-serif;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		background-color: var(--bg-200);
-	}
-
-	select {
-		background: var(--bg-300);
-	}
-	label {
-		word-break: keep-all;
-	}
-
-	/* Add or modify these classes to style cards */
-	.skin-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(20rem, 35rem));
-		max-width: 90%;
-		margin-inline: auto;
-		justify-content: center;
-		/* center */
-		margin-block: 1rem;
-		flex-direction: column; /* Only one card per row */
-		gap: 2rem;
-		margin-top: 1rem;
-	}
-
-	.input-group {
-		display: flex;
-		align-items: center;
-		margin: 1rem auto;
-		justify-content: center;
-	}
-
-	.input-group label {
-		margin-right: 0.5rem;
-		color: #fff;
-		font-weight: bold;
-	}
-
-	#SelectedChamp {
-		padding: 0.25rem 0.5rem;
-		border-radius: 4px;
-		color: #fff;
-		border: 1px solid #666;
-	}
+    .container {
+        gap: 2rem;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: auto;
+    }
+    .container section {
+        padding: 3rem;
+        background: rgba(18, 18, 18, 0.4);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.1px);
+        -webkit-backdrop-filter: blur(13.1px);
+        border: 1px solid rgba(18, 18, 18, 0.4);
+        border-radius: 1rem;
+    }
+    .accent {
+        font-family: consolas, monospace;
+        color: #7944de;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color: #e2e2e2;
+        /* limit character width */
+        max-width: 80ch;
+    }
+    .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
 </style>

@@ -9,7 +9,10 @@ const config = {
 		adapter: adapter()
 	},
 	preprocess: [mdsvex()],
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx'],
+	compilerOptions: {
+		runes: true
+	}
 };
 
 export default config;
